@@ -1,0 +1,826 @@
+/* =========================================
+   ANDROID TECHNOLOGY PAGE
+   ========================================= */
+
+.android-page {
+  --android-primary: #34a853;
+  --android-secondary: #66bb6a;
+  --android-dark: #071b0d;
+  --android-text: #18251b;
+  --android-muted: #68756b;
+  --android-light: #f5faf6;
+
+  width: 100%;
+  overflow: hidden;
+
+  background: #ffffff;
+  color: var(--android-text);
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.android-hero {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  padding: 100px 24px 150px;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(102, 187, 106, 0.16),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(52, 168, 83, 0.2),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #07140b 0%,
+      #102719 50%,
+      #163d23 100%
+    );
+}
+
+.android-hero-grid {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.15;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+}
+
+.android-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+}
+
+.android-hero-icon {
+  width: 82px;
+  height: 82px;
+
+  margin: 0 auto 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 22px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(52, 168, 83, 0.95),
+    rgba(102, 187, 106, 0.85)
+  );
+
+  color: #ffffff;
+
+  font-size: 36px;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.28),
+    0 0 35px rgba(102, 187, 106, 0.18);
+}
+
+.android-eyebrow {
+  margin: 0 0 16px;
+
+  color: #91d99a;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.android-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 6vw, 72px);
+
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.android-hero-description {
+  max-width: 720px;
+
+  margin: 25px auto 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+.android-hero-buttons {
+  margin-top: 38px;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.android-btn {
+  min-height: 52px;
+
+  padding: 0 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.android-btn-primary {
+  border: 1px solid var(--android-primary);
+
+  background: linear-gradient(
+    135deg,
+    var(--android-primary),
+    var(--android-secondary)
+  );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 10px 25px rgba(52, 168, 83, 0.25);
+}
+
+.android-btn-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 32px rgba(52, 168, 83, 0.35);
+}
+
+.android-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+}
+
+.android-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color: rgba(255, 255, 255, 0.55);
+
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   INTRO STATS
+   ========================================= */
+
+.android-intro {
+  position: relative;
+  z-index: 5;
+
+  width: calc(100% - 48px);
+  max-width: 1100px;
+
+  margin: -65px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 55px rgba(7, 27, 13, 0.12);
+
+  overflow: hidden;
+}
+
+.android-stat {
+  padding: 32px 25px;
+
+  text-align: center;
+
+  border-right: 1px solid #e8eee9;
+}
+
+.android-stat:last-child {
+  border-right: none;
+}
+
+.android-stat span {
+  display: block;
+
+  color: var(--android-primary);
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.android-stat small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: var(--android-muted);
+
+  font-size: 13px;
+}
+
+/* =========================================
+   COMMON SECTION
+   ========================================= */
+
+.android-section {
+  padding: 110px 24px;
+}
+
+.android-section-heading {
+  max-width: 760px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.android-section-heading > span {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--android-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+.android-section-heading h2 {
+  margin: 0;
+
+  color: #17251b;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.2;
+}
+
+.android-section-heading p {
+  margin: 18px auto 0;
+
+  color: var(--android-muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.android-feature-grid {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.android-feature-card {
+  padding: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #e4ebe5;
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.android-feature-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(52, 168, 83, 0.3);
+
+  box-shadow:
+    0 18px 40px rgba(7, 27, 13, 0.09);
+}
+
+.android-card-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 23px;
+
+  border-radius: 14px;
+
+  background: rgba(52, 168, 83, 0.1);
+
+  color: var(--android-primary);
+
+  font-size: 23px;
+}
+
+.android-feature-card h3 {
+  margin: 0 0 12px;
+
+  color: #17251b;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+.android-feature-card p {
+  margin: 0;
+
+  color: var(--android-muted);
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+/* =========================================
+   BENEFITS
+   ========================================= */
+
+.android-benefits {
+  padding: 110px 24px;
+
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(102, 187, 106, 0.12),
+      transparent 30%
+    ),
+    #f5faf6;
+}
+
+.android-benefits-container {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.android-benefits-content > span {
+  color: var(--android-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+.android-benefits-content h2 {
+  margin: 17px 0 20px;
+
+  color: #142219;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.2;
+}
+
+.android-benefits-content h2 strong {
+  color: var(--android-primary);
+
+  font-weight: 700;
+}
+
+.android-benefits-content p {
+  margin: 0;
+
+  color: var(--android-muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.android-benefit-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.android-benefit-item {
+  min-height: 74px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1eae3;
+
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.android-benefit-item:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(52, 168, 83, 0.3);
+
+  box-shadow:
+    0 10px 25px rgba(7, 27, 13, 0.07);
+}
+
+.android-benefit-item svg {
+  flex-shrink: 0;
+
+  color: var(--android-primary);
+
+  font-size: 16px;
+}
+
+.android-benefit-item span {
+  color: #344238;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   EXPERTISE
+   ========================================= */
+
+.android-expertise {
+  background: #ffffff;
+}
+
+.android-expertise-grid {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.android-expertise-card {
+  padding: 30px;
+
+  background: #f9fcfa;
+
+  border: 1px solid #e5ece6;
+
+  border-radius: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.android-expertise-card:hover {
+  transform: translateY(-5px);
+
+  background: #ffffff;
+
+  border-color: rgba(52, 168, 83, 0.3);
+
+  box-shadow:
+    0 15px 35px rgba(7, 27, 13, 0.08);
+}
+
+.android-expertise-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+
+  background: rgba(52, 168, 83, 0.1);
+
+  color: var(--android-primary);
+
+  font-size: 20px;
+}
+
+.android-expertise-card h3 {
+  margin: 0 0 10px;
+
+  color: #17251b;
+
+  font-size: 17px;
+}
+
+.android-expertise-card p {
+  margin: 0;
+
+  color: var(--android-muted);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.android-cta {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 100px 24px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(102, 187, 106, 0.2),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #07140b,
+      #163d23
+    );
+
+  text-align: center;
+}
+
+.android-cta-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+}
+
+.android-cta-content > svg {
+  margin-bottom: 20px;
+
+  color: #91d99a;
+
+  font-size: 38px;
+}
+
+.android-cta h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(30px, 4vw, 46px);
+
+  line-height: 1.2;
+}
+
+.android-cta p {
+  max-width: 600px;
+
+  margin: 18px auto 30px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .android-hero {
+    min-height: 600px;
+
+    padding: 90px 22px 125px;
+  }
+
+  .android-feature-grid,
+  .android-expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .android-benefits-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .android-hero {
+    min-height: auto;
+
+    padding: 80px 18px 115px;
+  }
+
+  .android-hero-icon {
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 22px;
+
+    border-radius: 18px;
+
+    font-size: 29px;
+  }
+
+  .android-eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .android-hero h1 {
+    font-size: 38px;
+  }
+
+  .android-hero-description {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .android-hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .android-btn {
+    width: 100%;
+  }
+
+  .android-intro {
+    width: calc(100% - 30px);
+
+    margin-top: -50px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .android-stat {
+    padding: 23px 20px;
+
+    border-right: none;
+
+    border-bottom: 1px solid #e8eee9;
+  }
+
+  .android-stat:last-child {
+    border-bottom: none;
+  }
+
+  .android-section {
+    padding: 80px 18px;
+  }
+
+  .android-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .android-section-heading h2 {
+    font-size: 32px;
+  }
+
+  .android-section-heading p {
+    font-size: 14px;
+  }
+
+  .android-feature-grid,
+  .android-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .android-feature-card,
+  .android-expertise-card {
+    padding: 26px;
+  }
+
+  .android-benefits {
+    padding: 80px 18px;
+  }
+
+  .android-benefits-content h2 {
+    font-size: 32px;
+  }
+
+  .android-benefits-content p {
+    font-size: 14px;
+  }
+
+  .android-benefit-list {
+    grid-template-columns: 1fr;
+  }
+
+  .android-cta {
+    padding: 80px 18px;
+  }
+
+  .android-cta h2 {
+    font-size: 32px;
+  }
+
+  .android-cta p {
+    font-size: 14px;
+  }
+}

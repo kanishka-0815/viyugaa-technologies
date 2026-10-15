@@ -1,0 +1,962 @@
+/* =========================================================
+   VIYUGAA TECHNOLOGIES
+   ReactJS Technology Page
+   Modern Professional UI
+========================================================= */
+
+.reactjs-page {
+  --react-primary: #61dafb;
+  --react-primary-dark: #087ea4;
+  --react-dark: #101828;
+  --react-text: #344054;
+  --react-muted: #667085;
+  --react-border: #e4e7ec;
+  --react-light: #f8fafc;
+  --react-white: #ffffff;
+
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--react-dark);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.reactjs-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.reactjs-hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(97, 218, 251, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(8, 126, 164, 0.22),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #07151f 0%,
+      #0b202c 50%,
+      #102f3e 100%
+    );
+
+  color: #ffffff;
+}
+
+.reactjs-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+  pointer-events: none;
+}
+
+.reactjs-hero-inner {
+  position: relative;
+  z-index: 2;
+
+  width: min(850px, calc(100% - 40px));
+  text-align: center;
+  padding: 90px 0;
+}
+
+.reactjs-hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.reactjs-glow-one {
+  width: 280px;
+  height: 280px;
+  top: -100px;
+  left: -80px;
+  background: rgba(97, 218, 251, 0.13);
+}
+
+.reactjs-glow-two {
+  width: 350px;
+  height: 350px;
+  right: -130px;
+  bottom: -160px;
+  background: rgba(97, 218, 251, 0.1);
+}
+
+.reactjs-icon-box {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(97, 218, 251, 0.35);
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.2),
+    inset 0 0 30px rgba(97, 218, 251, 0.05);
+}
+
+.reactjs-icon-box svg {
+  font-size: 46px;
+  color: var(--react-primary);
+}
+
+.reactjs-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: var(--react-primary);
+}
+
+.reactjs-hero h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.reactjs-hero h1 span {
+  display: block;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.reactjs-hero-inner > p {
+  width: min(680px, 100%);
+  margin: 28px auto 0;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.reactjs-hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+.reactjs-primary-btn,
+.reactjs-secondary-btn {
+  min-height: 50px;
+  padding: 0 23px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.reactjs-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid var(--react-primary);
+  background: var(--react-primary);
+  color: #06202a;
+}
+
+.reactjs-primary-btn:hover {
+  transform: translateY(-2px);
+  background: #8ce6ff;
+}
+
+.reactjs-secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.reactjs-secondary-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.reactjs-intro {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.reactjs-intro-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.reactjs-section-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  color: var(--react-primary-dark);
+}
+
+.reactjs-intro-heading h2 {
+  max-width: 520px;
+  margin: 0;
+
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.reactjs-intro-heading h2 span {
+  color: var(--react-primary-dark);
+}
+
+.reactjs-intro-text {
+  padding-left: 35px;
+  border-left: 1px solid var(--react-border);
+}
+
+.reactjs-intro-text p {
+  margin: 0 0 18px;
+
+  color: var(--react-muted);
+
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.reactjs-intro-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+.reactjs-section {
+  padding: 100px 0;
+}
+
+.reactjs-features-section {
+  background: var(--react-light);
+}
+
+.reactjs-section-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.reactjs-section-heading h2 {
+  margin: 0;
+
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.reactjs-section-heading > p {
+  margin: 18px auto 0;
+
+  color: var(--react-muted);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.reactjs-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.reactjs-feature-card {
+  position: relative;
+
+  min-height: 280px;
+  padding: 32px;
+
+  background: #ffffff;
+  border: 1px solid var(--react-border);
+  border-radius: 14px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.reactjs-feature-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(97, 218, 251, 0.55);
+
+  box-shadow:
+    0 20px 45px rgba(16, 24, 40, 0.08);
+}
+
+.reactjs-feature-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  border-radius: 12px;
+
+  background: rgba(97, 218, 251, 0.1);
+  color: var(--react-primary-dark);
+}
+
+.reactjs-feature-icon svg {
+  font-size: 23px;
+}
+
+.reactjs-card-number {
+  position: absolute;
+  top: 27px;
+  right: 28px;
+
+  color: #d0d5dd;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.reactjs-feature-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.reactjs-feature-card p {
+  margin: 0;
+
+  color: var(--react-muted);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   WHY REACT
+========================================================= */
+
+.reactjs-why-section {
+  background: #ffffff;
+}
+
+.reactjs-why-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.reactjs-why-content h2 {
+  max-width: 520px;
+  margin: 0 0 24px;
+
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -1.3px;
+}
+
+.reactjs-why-content h2 span {
+  color: var(--react-primary-dark);
+}
+
+.reactjs-why-content p {
+  max-width: 540px;
+  margin: 0 0 17px;
+
+  color: var(--react-muted);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.reactjs-text-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 12px;
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  color: var(--react-primary-dark);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.reactjs-text-btn svg {
+  transition: transform 0.25s ease;
+}
+
+.reactjs-text-btn:hover svg {
+  transform: translateX(5px);
+}
+
+.reactjs-benefits-card {
+  padding: 35px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #07151f,
+      #0e2b39
+    );
+
+  color: #ffffff;
+
+  box-shadow: 0 25px 60px rgba(16, 24, 40, 0.12);
+}
+
+.reactjs-benefits-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding-bottom: 28px;
+  margin-bottom: 5px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reactjs-benefits-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: rgba(97, 218, 251, 0.1);
+  color: var(--react-primary);
+}
+
+.reactjs-benefits-icon svg {
+  font-size: 22px;
+}
+
+.reactjs-benefits-top span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--react-primary);
+}
+
+.reactjs-benefits-top h3 {
+  margin: 5px 0 0;
+
+  font-size: 19px;
+}
+
+.reactjs-benefits-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.reactjs-benefit-item {
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 58px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+}
+
+.reactjs-benefit-item:last-child {
+  border-bottom: 0;
+}
+
+.reactjs-check {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(97, 218, 251, 0.13);
+  color: var(--react-primary);
+}
+
+.reactjs-check svg {
+  font-size: 10px;
+}
+
+.reactjs-benefit-item small {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================================
+   EXPERTISE
+========================================================= */
+
+.reactjs-expertise-section {
+  background: var(--react-light);
+}
+
+.reactjs-expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.reactjs-expertise-card {
+  display: grid;
+  grid-template-columns: 45px 1fr 20px;
+  align-items: center;
+  gap: 18px;
+
+  padding: 24px;
+
+  background: #ffffff;
+  border: 1px solid var(--react-border);
+  border-radius: 12px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.reactjs-expertise-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.07);
+}
+
+.reactjs-expertise-card > span {
+  color: var(--react-primary-dark);
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.reactjs-expertise-card h3 {
+  margin: 0 0 6px;
+
+  font-size: 15px;
+}
+
+.reactjs-expertise-card p {
+  margin: 0;
+
+  color: var(--react-muted);
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.reactjs-expertise-card > svg {
+  color: #98a2b3;
+  font-size: 13px;
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.reactjs-process-section {
+  background: #ffffff;
+}
+
+.reactjs-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.reactjs-process-card {
+  position: relative;
+
+  padding: 30px;
+
+  border-top: 1px solid var(--react-border);
+  border-bottom: 1px solid var(--react-border);
+  border-left: 1px solid var(--react-border);
+}
+
+.reactjs-process-card:last-child {
+  border-right: 1px solid var(--react-border);
+}
+
+.reactjs-process-card > span {
+  color: var(--react-primary-dark);
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.reactjs-process-card h3 {
+  margin: 35px 0 12px;
+
+  font-size: 18px;
+}
+
+.reactjs-process-card p {
+  margin: 0;
+
+  color: var(--react-muted);
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.reactjs-cta-section {
+  padding: 70px 0 100px;
+  background: #ffffff;
+}
+
+.reactjs-cta {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 28px;
+
+  padding: 45px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #07151f,
+      #0e2b39
+    );
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.reactjs-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  right: -100px;
+  bottom: -150px;
+
+  border-radius: 50%;
+
+  background: rgba(97, 218, 251, 0.1);
+}
+
+.reactjs-cta-icon {
+  position: relative;
+  z-index: 1;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: rgba(97, 218, 251, 0.1);
+  color: var(--react-primary);
+}
+
+.reactjs-cta-icon svg {
+  font-size: 25px;
+}
+
+.reactjs-cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.reactjs-cta-content span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--react-primary);
+}
+
+.reactjs-cta-content h2 {
+  margin: 7px 0;
+
+  font-size: 27px;
+}
+
+.reactjs-cta-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.reactjs-cta button {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  min-height: 48px;
+  padding: 0 20px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: var(--react-primary);
+  color: #06202a;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.reactjs-cta button:hover {
+  background: #8ce6ff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+  .reactjs-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reactjs-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reactjs-process-card:nth-child(2) {
+    border-right: 1px solid var(--react-border);
+  }
+
+  .reactjs-process-card:nth-child(3),
+  .reactjs-process-card:nth-child(4) {
+    border-top: 0;
+  }
+
+  .reactjs-why-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .reactjs-container {
+    width: min(100% - 30px, 620px);
+  }
+
+  .reactjs-hero {
+    min-height: 580px;
+  }
+
+  .reactjs-hero-inner {
+    padding: 70px 0;
+  }
+
+  .reactjs-hero h1 {
+    font-size: 43px;
+  }
+
+  .reactjs-hero-inner > p {
+    font-size: 16px;
+  }
+
+  .reactjs-hero-actions {
+    flex-direction: column;
+  }
+
+  .reactjs-primary-btn,
+  .reactjs-secondary-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .reactjs-intro {
+    padding: 70px 0;
+  }
+
+  .reactjs-intro-grid,
+  .reactjs-why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .reactjs-intro-text {
+    padding-left: 20px;
+  }
+
+  .reactjs-section {
+    padding: 70px 0;
+  }
+
+  .reactjs-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reactjs-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reactjs-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reactjs-process-card {
+    border-right: 1px solid var(--react-border);
+    border-bottom: 0;
+  }
+
+  .reactjs-process-card:last-child {
+    border-bottom: 1px solid var(--react-border);
+  }
+
+  .reactjs-process-card:nth-child(3),
+  .reactjs-process-card:nth-child(4) {
+    border-top: 0;
+  }
+
+  .reactjs-cta {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .reactjs-cta button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .reactjs-hero h1 {
+    font-size: 37px;
+    letter-spacing: -1px;
+  }
+
+  .reactjs-icon-box {
+    width: 72px;
+    height: 72px;
+  }
+
+  .reactjs-icon-box svg {
+    font-size: 38px;
+  }
+
+  .reactjs-benefits-card {
+    padding: 24px 20px;
+  }
+
+  .reactjs-feature-card {
+    padding: 25px;
+  }
+
+  .reactjs-cta {
+    padding: 25px 20px;
+  }
+}

@@ -1,0 +1,826 @@
+/* =========================================
+   MYSQL TECHNOLOGY PAGE
+   ========================================= */
+
+.mysql-page {
+  --mysql-primary: #00758f;
+  --mysql-secondary: #00a6c7;
+  --mysql-dark: #061a20;
+  --mysql-text: #17252a;
+  --mysql-muted: #68777c;
+  --mysql-light: #f3fafb;
+
+  width: 100%;
+  overflow: hidden;
+
+  background: #ffffff;
+  color: var(--mysql-text);
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.mysql-hero {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  padding: 100px 24px 150px;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(0, 166, 199, 0.17),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(0, 117, 143, 0.22),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #061419 0%,
+      #0c2931 50%,
+      #10424d 100%
+    );
+}
+
+.mysql-hero-grid {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.15;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+}
+
+.mysql-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+}
+
+.mysql-hero-icon {
+  width: 82px;
+  height: 82px;
+
+  margin: 0 auto 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 22px;
+
+  background: linear-gradient(
+    135deg,
+    var(--mysql-primary),
+    var(--mysql-secondary)
+  );
+
+  color: #ffffff;
+
+  font-size: 36px;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.28),
+    0 0 35px rgba(0, 166, 199, 0.2);
+}
+
+.mysql-eyebrow {
+  margin: 0 0 16px;
+
+  color: #7dd8e8;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.mysql-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 6vw, 72px);
+
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.mysql-hero-description {
+  max-width: 720px;
+
+  margin: 25px auto 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+.mysql-hero-buttons {
+  margin-top: 38px;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.mysql-btn {
+  min-height: 52px;
+
+  padding: 0 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.mysql-btn-primary {
+  border: 1px solid var(--mysql-primary);
+
+  background: linear-gradient(
+    135deg,
+    var(--mysql-primary),
+    var(--mysql-secondary)
+  );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 10px 25px rgba(0, 117, 143, 0.25);
+}
+
+.mysql-btn-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 32px rgba(0, 117, 143, 0.35);
+}
+
+.mysql-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+}
+
+.mysql-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color: rgba(255, 255, 255, 0.55);
+
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   INTRO STATS
+   ========================================= */
+
+.mysql-intro {
+  position: relative;
+  z-index: 5;
+
+  width: calc(100% - 48px);
+  max-width: 1100px;
+
+  margin: -65px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 55px rgba(6, 26, 32, 0.12);
+
+  overflow: hidden;
+}
+
+.mysql-stat {
+  padding: 32px 25px;
+
+  text-align: center;
+
+  border-right: 1px solid #e5edef;
+}
+
+.mysql-stat:last-child {
+  border-right: none;
+}
+
+.mysql-stat span {
+  display: block;
+
+  color: var(--mysql-primary);
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.mysql-stat small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: var(--mysql-muted);
+
+  font-size: 13px;
+}
+
+/* =========================================
+   COMMON SECTION
+   ========================================= */
+
+.mysql-section {
+  padding: 110px 24px;
+}
+
+.mysql-section-heading {
+  max-width: 760px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.mysql-section-heading > span {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--mysql-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+.mysql-section-heading h2 {
+  margin: 0;
+
+  color: #17252a;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.2;
+}
+
+.mysql-section-heading p {
+  margin: 18px auto 0;
+
+  color: var(--mysql-muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.mysql-feature-grid {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.mysql-feature-card {
+  padding: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3edef;
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.mysql-feature-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(0, 117, 143, 0.3);
+
+  box-shadow:
+    0 18px 40px rgba(6, 26, 32, 0.09);
+}
+
+.mysql-card-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 23px;
+
+  border-radius: 14px;
+
+  background: rgba(0, 117, 143, 0.1);
+
+  color: var(--mysql-primary);
+
+  font-size: 23px;
+}
+
+.mysql-feature-card h3 {
+  margin: 0 0 12px;
+
+  color: #17252a;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+.mysql-feature-card p {
+  margin: 0;
+
+  color: var(--mysql-muted);
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+/* =========================================
+   BENEFITS
+   ========================================= */
+
+.mysql-benefits {
+  padding: 110px 24px;
+
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(0, 166, 199, 0.12),
+      transparent 30%
+    ),
+    #f3fafb;
+}
+
+.mysql-benefits-container {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.mysql-benefits-content > span {
+  color: var(--mysql-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+.mysql-benefits-content h2 {
+  margin: 17px 0 20px;
+
+  color: #14272c;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.2;
+}
+
+.mysql-benefits-content h2 strong {
+  color: var(--mysql-primary);
+
+  font-weight: 700;
+}
+
+.mysql-benefits-content p {
+  margin: 0;
+
+  color: var(--mysql-muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.mysql-benefit-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.mysql-benefit-item {
+  min-height: 74px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfeaec;
+
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.mysql-benefit-item:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(0, 117, 143, 0.3);
+
+  box-shadow:
+    0 10px 25px rgba(6, 26, 32, 0.07);
+}
+
+.mysql-benefit-item svg {
+  flex-shrink: 0;
+
+  color: var(--mysql-primary);
+
+  font-size: 16px;
+}
+
+.mysql-benefit-item span {
+  color: #34464b;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   EXPERTISE
+   ========================================= */
+
+.mysql-expertise {
+  background: #ffffff;
+}
+
+.mysql-expertise-grid {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.mysql-expertise-card {
+  padding: 30px;
+
+  background: #f9fcfc;
+
+  border: 1px solid #e3edef;
+
+  border-radius: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.mysql-expertise-card:hover {
+  transform: translateY(-5px);
+
+  background: #ffffff;
+
+  border-color: rgba(0, 117, 143, 0.3);
+
+  box-shadow:
+    0 15px 35px rgba(6, 26, 32, 0.08);
+}
+
+.mysql-expertise-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+
+  background: rgba(0, 117, 143, 0.1);
+
+  color: var(--mysql-primary);
+
+  font-size: 20px;
+}
+
+.mysql-expertise-card h3 {
+  margin: 0 0 10px;
+
+  color: #17252a;
+
+  font-size: 17px;
+}
+
+.mysql-expertise-card p {
+  margin: 0;
+
+  color: var(--mysql-muted);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.mysql-cta {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 100px 24px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(0, 166, 199, 0.2),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #061419,
+      #10424d
+    );
+
+  text-align: center;
+}
+
+.mysql-cta-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+}
+
+.mysql-cta-content > svg {
+  margin-bottom: 20px;
+
+  color: #7dd8e8;
+
+  font-size: 38px;
+}
+
+.mysql-cta h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(30px, 4vw, 46px);
+
+  line-height: 1.2;
+}
+
+.mysql-cta p {
+  max-width: 600px;
+
+  margin: 18px auto 30px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .mysql-hero {
+    min-height: 600px;
+
+    padding: 90px 22px 125px;
+  }
+
+  .mysql-feature-grid,
+  .mysql-expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mysql-benefits-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .mysql-hero {
+    min-height: auto;
+
+    padding: 80px 18px 115px;
+  }
+
+  .mysql-hero-icon {
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 22px;
+
+    border-radius: 18px;
+
+    font-size: 29px;
+  }
+
+  .mysql-eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .mysql-hero h1 {
+    font-size: 38px;
+  }
+
+  .mysql-hero-description {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .mysql-hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .mysql-btn {
+    width: 100%;
+  }
+
+  .mysql-intro {
+    width: calc(100% - 30px);
+
+    margin-top: -50px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .mysql-stat {
+    padding: 23px 20px;
+
+    border-right: none;
+
+    border-bottom: 1px solid #e5edef;
+  }
+
+  .mysql-stat:last-child {
+    border-bottom: none;
+  }
+
+  .mysql-section {
+    padding: 80px 18px;
+  }
+
+  .mysql-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .mysql-section-heading h2 {
+    font-size: 32px;
+  }
+
+  .mysql-section-heading p {
+    font-size: 14px;
+  }
+
+  .mysql-feature-grid,
+  .mysql-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mysql-feature-card,
+  .mysql-expertise-card {
+    padding: 26px;
+  }
+
+  .mysql-benefits {
+    padding: 80px 18px;
+  }
+
+  .mysql-benefits-content h2 {
+    font-size: 32px;
+  }
+
+  .mysql-benefits-content p {
+    font-size: 14px;
+  }
+
+  .mysql-benefit-list {
+    grid-template-columns: 1fr;
+  }
+
+  .mysql-cta {
+    padding: 80px 18px;
+  }
+
+  .mysql-cta h2 {
+    font-size: 32px;
+  }
+
+  .mysql-cta p {
+    font-size: 14px;
+  }
+}

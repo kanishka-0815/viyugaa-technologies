@@ -1,0 +1,940 @@
+/* =========================================================
+   SOFTWARE PRODUCT DEVELOPMENT
+   ========================================================= */
+
+.product-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f7f9fc;
+  color: #172033;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.product-page .service-hero {
+  width: 100%;
+
+  padding: 70px 6% 80px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(72, 126, 210, 0.16),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #0f1b32 0%,
+      #162847 55%,
+      #1d3557 100%
+    );
+}
+
+.product-page .service-hero-content {
+  max-width: 1200px;
+  min-height: 500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.05fr 0.95fr;
+
+  align-items: center;
+
+  gap: 60px;
+}
+
+
+/* =========================================================
+   HERO TEXT
+   ========================================================= */
+
+.product-page .service-hero-text {
+  max-width: 650px;
+}
+
+.product-page .service-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #8fb8ff;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.product-page .service-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(42px, 5vw, 66px);
+
+  line-height: 1.08;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+}
+
+.product-page .service-hero-text > p {
+  max-width: 610px;
+
+  margin: 25px 0 32px;
+
+  color: #d5deec;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.product-page .service-primary-btn {
+  min-height: 50px;
+
+  padding: 0 23px;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #172847;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-page .service-primary-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   HERO VISUAL
+   ========================================================= */
+
+.product-page .service-hero-visual {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.product-page .service-animation-card {
+  width: min(100%, 470px);
+
+  min-height: 390px;
+
+  padding: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(15px);
+
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.22);
+}
+
+.product-page .service-animation-card > div {
+  width: 100%;
+  max-width: 390px;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+   ========================================================= */
+
+.product-page .service-section {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 100px 6%;
+}
+
+.product-page .service-section-heading {
+  max-width: 720px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.product-page .service-section-heading > span,
+.product-page .service-highlight-content > span,
+.product-page .service-cta span {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #3569b8;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.product-page .service-section-heading h2 {
+  margin: 0;
+
+  color: #182337;
+
+  font-size: clamp(32px, 4vw, 46px);
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+}
+
+.product-page .service-section-heading p {
+  max-width: 650px;
+
+  margin: 18px auto 0;
+
+  color: #697386;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+   ========================================================= */
+
+.product-page .service-card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.product-page .service-info-card {
+  position: relative;
+
+  min-height: 275px;
+
+  padding: 30px;
+
+  border: 1px solid #e5eaf0;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 30px rgba(18, 38, 63, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.product-page .service-info-card:hover {
+  border-color: #c9d8eb;
+
+  box-shadow:
+    0 18px 45px rgba(18, 38, 63, 0.1);
+}
+
+.product-page .service-card-icon {
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #edf4ff;
+
+  color: #3569b8;
+
+  font-size: 21px;
+}
+
+.product-page .service-info-card h3 {
+  margin: 0 0 13px;
+
+  color: #1c2739;
+
+  font-size: 19px;
+
+  line-height: 1.35;
+}
+
+.product-page .service-info-card p {
+  margin: 0;
+
+  color: #697386;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.product-page .service-card-arrow {
+  position: absolute;
+
+  right: 28px;
+
+  bottom: 28px;
+
+  color: #a3afbf;
+
+  font-size: 13px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.product-page .service-info-card:hover .service-card-arrow {
+  color: #3569b8;
+
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   PRODUCT SOLUTIONS
+   ========================================================= */
+
+.product-page .product-solutions-section {
+  padding-top: 20px;
+}
+
+.product-page .product-solution-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.product-page .product-solution-card {
+  min-height: 180px;
+
+  padding: 30px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 22px;
+
+  border: 1px solid #e5eaf0;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 30px rgba(18, 38, 63, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.product-page .product-solution-card:hover {
+  border-color: #c9d8eb;
+
+  box-shadow:
+    0 18px 40px rgba(18, 38, 63, 0.08);
+}
+
+.product-page .product-solution-icon {
+  flex-shrink: 0;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #edf4ff;
+
+  color: #3569b8;
+
+  font-size: 20px;
+}
+
+.product-page .product-solution-card h3 {
+  margin: 3px 0 10px;
+
+  color: #1c2739;
+
+  font-size: 19px;
+}
+
+.product-page .product-solution-card p {
+  margin: 0;
+
+  color: #697386;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   HIGHLIGHT / BENEFITS
+   ========================================================= */
+
+.product-page .service-highlight-section {
+  padding: 100px 6%;
+
+  background: #edf3fa;
+}
+
+.product-page .service-highlight-wrapper {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.product-page .service-highlight-content h2 {
+  margin: 0;
+
+  color: #172337;
+
+  font-size: clamp(32px, 4vw, 46px);
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+}
+
+.product-page .service-highlight-content h2 strong {
+  color: #3569b8;
+}
+
+.product-page .service-highlight-content p {
+  margin: 22px 0 0;
+
+  color: #657185;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   BENEFIT CARDS
+   ========================================================= */
+
+.product-page .service-benefit-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.product-page .service-benefit-card {
+  min-height: 190px;
+
+  padding: 25px;
+
+  border: 1px solid #dfe7f0;
+
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-page .service-benefit-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 35px rgba(18, 38, 63, 0.07);
+}
+
+.product-page .service-benefit-card > div {
+  width: 43px;
+  height: 43px;
+
+  margin-bottom: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: #edf4ff;
+
+  color: #3569b8;
+
+  font-size: 17px;
+}
+
+.product-page .service-benefit-card h3 {
+  margin: 0 0 9px;
+
+  color: #1d293b;
+
+  font-size: 17px;
+}
+
+.product-page .service-benefit-card p {
+  margin: 0;
+
+  color: #6b7687;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.product-page .service-process-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.product-page .service-process-card {
+  min-height: 245px;
+
+  padding: 25px;
+
+  border: 1px solid #e5eaf0;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-page .service-process-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(18, 38, 63, 0.08);
+}
+
+.product-page .service-process-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 27px;
+}
+
+.product-page .service-process-top > span {
+  color: #dce5f0;
+
+  font-size: 28px;
+
+  font-weight: 800;
+}
+
+.product-page .service-process-top > div {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: #edf4ff;
+
+  color: #3569b8;
+}
+
+.product-page .service-process-card h3 {
+  margin: 0 0 10px;
+
+  color: #1c2739;
+
+  font-size: 18px;
+}
+
+.product-page .service-process-card p {
+  margin: 0;
+
+  color: #6c7788;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.product-page .service-cta-section {
+  padding: 0 6% 100px;
+}
+
+.product-page .service-cta {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 55px 60px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  border-radius: 24px;
+
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(79, 137, 225, 0.18),
+      transparent 35%
+    ),
+    #14233d;
+
+  box-shadow:
+    0 25px 60px rgba(20, 35, 61, 0.16);
+}
+
+.product-page .service-cta span {
+  color: #8fb8ff;
+}
+
+.product-page .service-cta h2 {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(28px, 4vw, 42px);
+
+  line-height: 1.15;
+}
+
+.product-page .service-cta h2 strong {
+  color: #8fb8ff;
+}
+
+.product-page .service-cta p {
+  max-width: 650px;
+
+  margin: 17px 0 0;
+
+  color: #c7d1df;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+.product-page .service-cta-btn {
+  flex-shrink: 0;
+
+  min-height: 52px;
+
+  padding: 0 24px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #172847;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-page .service-cta-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .product-page .service-hero-content {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    gap: 45px;
+  }
+
+  .product-page .service-hero-text {
+    max-width: 750px;
+
+    margin: 0 auto;
+  }
+
+  .product-page .service-hero-text > p {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .product-page .service-hero-visual {
+    max-width: 500px;
+
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .product-page .service-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-page .service-highlight-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .product-page .service-highlight-content {
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+  }
+
+  .product-page .service-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-page .service-cta {
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .product-page .service-hero {
+    padding: 55px 20px 65px;
+  }
+
+  .product-page .service-hero-content {
+    min-height: auto;
+  }
+
+  .product-page .service-hero h1 {
+    font-size: 40px;
+
+    letter-spacing: -1px;
+  }
+
+  .product-page .service-hero-text > p {
+    font-size: 15px;
+  }
+
+  .product-page .service-animation-card {
+    min-height: 280px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+  }
+
+  .product-page .service-section {
+    padding: 75px 20px;
+  }
+
+  .product-page .service-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .product-page .service-section-heading h2 {
+    font-size: 31px;
+  }
+
+  .product-page .service-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-page .service-info-card {
+    min-height: auto;
+
+    padding: 28px;
+  }
+
+  .product-page .product-solution-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-page .product-solution-card {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .product-page .service-highlight-section {
+    padding: 75px 20px;
+  }
+
+  .product-page .service-highlight-content h2 {
+    font-size: 32px;
+  }
+
+  .product-page .service-benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-page .service-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-page .service-process-card {
+    min-height: auto;
+  }
+
+  .product-page .service-cta-section {
+    padding: 0 20px 70px;
+  }
+
+  .product-page .service-cta {
+    padding: 40px 25px;
+
+    border-radius: 20px;
+  }
+
+  .product-page .service-cta h2 {
+    font-size: 30px;
+  }
+
+  .product-page .service-primary-btn,
+  .product-page .service-cta-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,832 @@
+/* =========================================================
+   VIYUGAA TECHNOLOGIES
+   AngularJS Technology Page
+========================================================= */
+
+.angularjs-page {
+  --angular-primary: #dd0031;
+  --angular-primary-dark: #b00027;
+  --angular-dark: #171717;
+  --angular-text: #344054;
+  --angular-muted: #667085;
+  --angular-border: #e4e7ec;
+  --angular-light: #f8fafc;
+  --angular-white: #ffffff;
+
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--angular-dark);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  overflow: hidden;
+}
+
+.angularjs-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.angularjs-hero {
+  position: relative;
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(221, 0, 49, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(255, 68, 92, 0.15),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #16070b 0%,
+      #250b12 50%,
+      #35101a 100%
+    );
+
+  color: #ffffff;
+}
+
+.angularjs-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+}
+
+.angularjs-hero-inner {
+  position: relative;
+  z-index: 2;
+
+  width: min(850px, calc(100% - 40px));
+
+  text-align: center;
+  padding: 90px 0;
+}
+
+.angularjs-hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.angularjs-glow-one {
+  width: 280px;
+  height: 280px;
+  top: -100px;
+  left: -80px;
+  background: rgba(221, 0, 49, 0.13);
+}
+
+.angularjs-glow-two {
+  width: 350px;
+  height: 350px;
+  right: -130px;
+  bottom: -160px;
+  background: rgba(255, 68, 92, 0.1);
+}
+
+.angularjs-icon-box {
+  width: 88px;
+  height: 88px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 28px;
+
+  border: 1px solid rgba(221, 0, 49, 0.4);
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.angularjs-icon-box svg {
+  font-size: 46px;
+  color: #ff3b58;
+}
+
+.angularjs-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #ff5870;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.angularjs-hero h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -2px;
+}
+
+.angularjs-hero h1 span {
+  display: block;
+  font-weight: 400;
+}
+
+.angularjs-hero-inner > p {
+  width: min(680px, 100%);
+  margin: 28px auto 0;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.angularjs-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+.angularjs-primary-btn,
+.angularjs-secondary-btn {
+  min-height: 50px;
+  padding: 0 23px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.angularjs-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid var(--angular-primary);
+  background: var(--angular-primary);
+  color: #ffffff;
+}
+
+.angularjs-primary-btn:hover {
+  transform: translateY(-2px);
+  background: #ef1647;
+}
+
+.angularjs-secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.angularjs-secondary-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* INTRO */
+
+.angularjs-intro {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.angularjs-intro-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.angularjs-section-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: var(--angular-primary-dark);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.angularjs-intro-heading h2 {
+  max-width: 520px;
+  margin: 0;
+
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.angularjs-intro-heading h2 span {
+  color: var(--angular-primary-dark);
+}
+
+.angularjs-intro-text {
+  padding-left: 35px;
+  border-left: 1px solid var(--angular-border);
+}
+
+.angularjs-intro-text p {
+  margin: 0 0 18px;
+
+  color: var(--angular-muted);
+
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/* COMMON */
+
+.angularjs-section {
+  padding: 100px 0;
+}
+
+.angularjs-features-section,
+.angularjs-expertise-section {
+  background: var(--angular-light);
+}
+
+.angularjs-section-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.angularjs-section-heading h2 {
+  margin: 0;
+
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.angularjs-section-heading > p {
+  margin: 18px auto 0;
+
+  color: var(--angular-muted);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* FEATURES */
+
+.angularjs-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.angularjs-feature-card {
+  position: relative;
+
+  min-height: 280px;
+  padding: 32px;
+
+  background: #ffffff;
+  border: 1px solid var(--angular-border);
+  border-radius: 14px;
+
+  transition: 0.3s ease;
+}
+
+.angularjs-feature-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(221, 0, 49, 0.45);
+
+  box-shadow: 0 20px 45px rgba(16, 24, 40, 0.08);
+}
+
+.angularjs-feature-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  border-radius: 12px;
+
+  background: rgba(221, 0, 49, 0.08);
+  color: var(--angular-primary);
+}
+
+.angularjs-feature-icon svg {
+  font-size: 23px;
+}
+
+.angularjs-card-number {
+  position: absolute;
+  top: 27px;
+  right: 28px;
+
+  color: #d0d5dd;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.angularjs-feature-card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.angularjs-feature-card p {
+  margin: 0;
+
+  color: var(--angular-muted);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* WHY */
+
+.angularjs-why-section {
+  background: #ffffff;
+}
+
+.angularjs-why-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.angularjs-why-content h2 {
+  max-width: 520px;
+  margin: 0 0 24px;
+
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.12;
+}
+
+.angularjs-why-content h2 span {
+  color: var(--angular-primary-dark);
+}
+
+.angularjs-why-content p {
+  max-width: 540px;
+  margin: 0 0 17px;
+
+  color: var(--angular-muted);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.angularjs-text-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 12px;
+
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  color: var(--angular-primary-dark);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.angularjs-text-btn:hover svg {
+  transform: translateX(5px);
+}
+
+.angularjs-text-btn svg {
+  transition: 0.25s ease;
+}
+
+/* BENEFITS */
+
+.angularjs-benefits-card {
+  padding: 35px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #16070b,
+      #35101a
+    );
+
+  color: #ffffff;
+
+  box-shadow: 0 25px 60px rgba(16, 24, 40, 0.12);
+}
+
+.angularjs-benefits-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.angularjs-benefits-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(221, 0, 49, 0.12);
+  color: #ff5870;
+}
+
+.angularjs-benefits-top span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #ff5870;
+}
+
+.angularjs-benefits-top h3 {
+  margin: 5px 0 0;
+  font-size: 19px;
+}
+
+.angularjs-benefits-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.angularjs-benefit-item {
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 58px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+}
+
+.angularjs-check {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(221, 0, 49, 0.15);
+  color: #ff5870;
+}
+
+.angularjs-check svg {
+  font-size: 10px;
+}
+
+.angularjs-benefit-item small {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* EXPERTISE */
+
+.angularjs-expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.angularjs-expertise-card {
+  display: grid;
+  grid-template-columns: 45px 1fr 20px;
+  align-items: center;
+  gap: 18px;
+
+  padding: 24px;
+
+  background: #ffffff;
+  border: 1px solid var(--angular-border);
+  border-radius: 12px;
+
+  transition: 0.25s ease;
+}
+
+.angularjs-expertise-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.07);
+}
+
+.angularjs-expertise-card > span {
+  color: var(--angular-primary-dark);
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.angularjs-expertise-card h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.angularjs-expertise-card p {
+  margin: 0;
+
+  color: var(--angular-muted);
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.angularjs-expertise-card > svg {
+  color: #98a2b3;
+}
+
+/* PROCESS */
+
+.angularjs-process-section {
+  background: #ffffff;
+}
+
+.angularjs-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.angularjs-process-card {
+  padding: 30px;
+
+  border-top: 1px solid var(--angular-border);
+  border-bottom: 1px solid var(--angular-border);
+  border-left: 1px solid var(--angular-border);
+}
+
+.angularjs-process-card:last-child {
+  border-right: 1px solid var(--angular-border);
+}
+
+.angularjs-process-card > span {
+  color: var(--angular-primary-dark);
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.angularjs-process-card h3 {
+  margin: 35px 0 12px;
+  font-size: 18px;
+}
+
+.angularjs-process-card p {
+  margin: 0;
+
+  color: var(--angular-muted);
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* CTA */
+
+.angularjs-cta-section {
+  padding: 70px 0 100px;
+  background: #ffffff;
+}
+
+.angularjs-cta {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 28px;
+
+  padding: 45px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    120deg,
+    #16070b,
+    #35101a
+  );
+
+  color: #ffffff;
+}
+
+.angularjs-cta-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: rgba(221, 0, 49, 0.12);
+  color: #ff5870;
+}
+
+.angularjs-cta-content span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ff5870;
+}
+
+.angularjs-cta-content h2 {
+  margin: 7px 0;
+  font-size: 27px;
+}
+
+.angularjs-cta-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.angularjs-cta button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  min-height: 48px;
+  padding: 0 20px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: var(--angular-primary);
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.angularjs-cta button:hover {
+  background: #ef1647;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .angularjs-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .angularjs-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .angularjs-process-card:nth-child(2) {
+    border-right: 1px solid var(--angular-border);
+  }
+
+  .angularjs-process-card:nth-child(3),
+  .angularjs-process-card:nth-child(4) {
+    border-top: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .angularjs-container {
+    width: min(100% - 30px, 620px);
+  }
+
+  .angularjs-hero {
+    min-height: 580px;
+  }
+
+  .angularjs-hero h1 {
+    font-size: 43px;
+  }
+
+  .angularjs-hero-actions {
+    flex-direction: column;
+  }
+
+  .angularjs-primary-btn,
+  .angularjs-secondary-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .angularjs-intro-grid,
+  .angularjs-why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .angularjs-intro-text {
+    padding-left: 20px;
+  }
+
+  .angularjs-section {
+    padding: 70px 0;
+  }
+
+  .angularjs-feature-grid,
+  .angularjs-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .angularjs-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .angularjs-process-card {
+    border-right: 1px solid var(--angular-border);
+    border-bottom: 0;
+  }
+
+  .angularjs-process-card:last-child {
+    border-bottom: 1px solid var(--angular-border);
+  }
+
+  .angularjs-cta {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .angularjs-cta button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .angularjs-hero h1 {
+    font-size: 37px;
+  }
+
+  .angularjs-icon-box {
+    width: 72px;
+    height: 72px;
+  }
+
+  .angularjs-icon-box svg {
+    font-size: 38px;
+  }
+
+  .angularjs-benefits-card {
+    padding: 24px 20px;
+  }
+
+  .angularjs-feature-card {
+    padding: 25px;
+  }
+
+  .angularjs-cta {
+    padding: 25px 20px;
+  }
+}

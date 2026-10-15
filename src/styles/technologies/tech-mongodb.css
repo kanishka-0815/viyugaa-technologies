@@ -1,0 +1,725 @@
+.mongodb-page {
+  --mongodb-primary: #168f3d;
+  --mongodb-secondary: #42b883;
+  --mongodb-dark: #071b12;
+  --mongodb-dark-two: #0d2a1d;
+  --mongodb-text: #18251f;
+  --mongodb-muted: #66736d;
+  --mongodb-light: #f5f8f6;
+  --mongodb-border: #e1e8e4;
+
+  background: #ffffff;
+  color: var(--mongodb-text);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.mongodb-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.mongodb-hero {
+  position: relative;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      135deg,
+      var(--mongodb-dark) 0%,
+      var(--mongodb-dark-two) 55%,
+      #123d29 100%
+    );
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.mongodb-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.07) 1px,
+      transparent 1px
+    );
+  background-size: 55px 55px;
+}
+
+.mongodb-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.mongodb-glow-one {
+  width: 420px;
+  height: 420px;
+  right: -120px;
+  top: -160px;
+  background: rgba(66, 184, 131, 0.2);
+}
+
+.mongodb-glow-two {
+  width: 330px;
+  height: 330px;
+  left: -160px;
+  bottom: -170px;
+  background: rgba(22, 143, 61, 0.2);
+}
+
+.mongodb-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 100px 0 120px;
+}
+
+.mongodb-icon-box {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 26px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+
+  color: #69d59b;
+  font-size: 30px;
+}
+
+.mongodb-eyebrow {
+  display: block;
+  margin-bottom: 15px;
+
+  color: #69d59b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.mongodb-hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+.mongodb-hero p {
+  max-width: 720px;
+  margin: 24px 0 0;
+
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* HERO BUTTONS */
+
+.mongodb-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.mongodb-btn {
+  min-height: 52px;
+  padding: 0 23px;
+
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.mongodb-btn:hover {
+  transform: translateY(-2px);
+}
+
+.mongodb-btn-primary {
+  border: 1px solid var(--mongodb-primary);
+  background: var(--mongodb-primary);
+  color: #ffffff;
+}
+
+.mongodb-btn-primary:hover {
+  background: #117431;
+}
+
+.mongodb-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.mongodb-btn-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+/* INTRO */
+
+.mongodb-intro {
+  position: relative;
+  z-index: 5;
+  margin-top: -58px;
+}
+
+.mongodb-intro-card {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+
+  padding: 25px 35px;
+
+  border: 1px solid var(--mongodb-border);
+  border-radius: 18px;
+
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(20, 40, 30, 0.1);
+}
+
+.mongodb-intro-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mongodb-intro-item > svg {
+  color: var(--mongodb-primary);
+  font-size: 23px;
+}
+
+.mongodb-intro-item strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+
+.mongodb-intro-item span {
+  color: var(--mongodb-muted);
+  font-size: 12px;
+}
+
+.mongodb-divider {
+  width: 1px;
+  height: 42px;
+  background: var(--mongodb-border);
+}
+
+/* SECTION */
+
+.mongodb-features {
+  padding: 115px 0 105px;
+  background: #ffffff;
+}
+
+.mongodb-section-heading {
+  max-width: 720px;
+  margin-bottom: 50px;
+}
+
+.mongodb-section-heading > span,
+.mongodb-section-label {
+  display: block;
+  margin-bottom: 13px;
+
+  color: var(--mongodb-primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+}
+
+.mongodb-section-heading h2 {
+  margin: 0;
+  color: var(--mongodb-text);
+
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.15;
+  letter-spacing: -1.3px;
+}
+
+.mongodb-section-heading p {
+  margin: 18px 0 0;
+
+  color: var(--mongodb-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* FEATURE CARDS */
+
+.mongodb-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mongodb-feature-card {
+  position: relative;
+  padding: 32px;
+
+  border: 1px solid var(--mongodb-border);
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mongodb-feature-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 24px;
+  width: 3px;
+
+  border-radius: 0 5px 5px 0;
+  background: var(--mongodb-primary);
+
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.mongodb-feature-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(22, 143, 61, 0.3);
+  box-shadow: 0 20px 45px rgba(20, 50, 35, 0.09);
+}
+
+.mongodb-feature-card:hover::before {
+  transform: scaleY(1);
+}
+
+.mongodb-feature-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 24px;
+
+  border-radius: 13px;
+  background: #eaf7ef;
+
+  color: var(--mongodb-primary);
+  font-size: 21px;
+}
+
+.mongodb-feature-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.mongodb-feature-card p {
+  margin: 0;
+
+  color: var(--mongodb-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* BENEFITS */
+
+.mongodb-benefits {
+  padding: 105px 0;
+  background: var(--mongodb-light);
+}
+
+.mongodb-benefits-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.mongodb-benefits-content h2 {
+  margin: 0;
+
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.mongodb-benefits-content h2 span {
+  color: var(--mongodb-primary);
+}
+
+.mongodb-benefits-content p {
+  max-width: 510px;
+  margin: 23px 0 0;
+
+  color: var(--mongodb-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.mongodb-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mongodb-benefit-item {
+  display: grid;
+  grid-template-columns: 42px 42px 1fr;
+  align-items: center;
+  gap: 15px;
+
+  padding: 17px 20px;
+
+  border: 1px solid var(--mongodb-border);
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.mongodb-benefit-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 10px 30px rgba(20, 50, 35, 0.07);
+}
+
+.mongodb-benefit-number {
+  color: #a2ada7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.mongodb-benefit-check {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #eaf7ef;
+
+  color: var(--mongodb-primary);
+  font-size: 13px;
+}
+
+.mongodb-benefit-item span {
+  color: #2c3933;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* EXPERTISE */
+
+.mongodb-expertise {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.mongodb-expertise-heading {
+  max-width: 650px;
+}
+
+.mongodb-expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.mongodb-expertise-card {
+  min-height: 180px;
+
+  padding: 27px;
+
+  border: 1px solid var(--mongodb-border);
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mongodb-expertise-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(22, 143, 61, 0.35);
+  box-shadow: 0 15px 40px rgba(20, 50, 35, 0.08);
+}
+
+.mongodb-expertise-icon {
+  color: var(--mongodb-primary);
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.mongodb-expertise-card h3 {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.mongodb-expertise-card span {
+  display: block;
+  margin-top: 12px;
+
+  color: #89948e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+/* CTA */
+
+.mongodb-cta {
+  position: relative;
+  padding: 100px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071b12 0%,
+      #0d2a1d 55%,
+      #123d29 100%
+    );
+
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.mongodb-cta-glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -160px;
+  top: -170px;
+
+  border-radius: 50%;
+  background: rgba(66, 184, 131, 0.14);
+  filter: blur(10px);
+}
+
+.mongodb-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.mongodb-cta-content > span {
+  display: block;
+  margin-bottom: 14px;
+
+  color: #69d59b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.mongodb-cta-content h2 {
+  margin: 0;
+
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.mongodb-cta-content p {
+  max-width: 650px;
+  margin: 20px 0 30px;
+
+  color: rgba(255, 255, 255, 0.67);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.mongodb-cta-button {
+  min-height: 52px;
+  padding: 0 23px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #0d2a1d;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.mongodb-cta-button:hover {
+  transform: translateY(-3px);
+  background: #eaf7ef;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .mongodb-feature-grid,
+  .mongodb-expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mongodb-benefits-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .mongodb-intro-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .mongodb-divider {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .mongodb-container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .mongodb-hero {
+    min-height: 620px;
+  }
+
+  .mongodb-hero-content {
+    padding: 85px 0 105px;
+  }
+
+  .mongodb-icon-box {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+
+  .mongodb-hero h1 {
+    font-size: 43px;
+    letter-spacing: -1.5px;
+  }
+
+  .mongodb-hero p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .mongodb-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mongodb-btn {
+    width: 100%;
+  }
+
+  .mongodb-intro {
+    margin-top: -45px;
+  }
+
+  .mongodb-intro-card {
+    padding: 23px;
+  }
+
+  .mongodb-features,
+  .mongodb-benefits,
+  .mongodb-expertise {
+    padding: 80px 0;
+  }
+
+  .mongodb-section-heading {
+    margin-bottom: 35px;
+  }
+
+  .mongodb-section-heading h2 {
+    font-size: 31px;
+  }
+
+  .mongodb-feature-grid,
+  .mongodb-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mongodb-feature-card {
+    padding: 27px;
+  }
+
+  .mongodb-benefits-content h2 {
+    font-size: 34px;
+  }
+
+  .mongodb-benefit-item {
+    grid-template-columns: 30px 38px 1fr;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .mongodb-benefit-item span {
+    font-size: 13px;
+  }
+
+  .mongodb-cta {
+    padding: 80px 0;
+  }
+
+  .mongodb-cta-content h2 {
+    font-size: 35px;
+  }
+
+  .mongodb-cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,694 @@
+.php-page {
+  --php-primary: #777bb4;
+  --php-secondary: #9b9ed6;
+  --php-dark: #111426;
+  --php-text: #202534;
+  --php-muted: #6d7482;
+  --php-light: #f7f7fa;
+
+  color: var(--php-text);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.php-hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 7% 150px;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(119, 123, 180, 0.28),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(155, 158, 214, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #0d1020 0%, #17192d 50%, #111827 100%);
+
+  color: #ffffff;
+  isolation: isolate;
+}
+
+.php-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+
+  background-size: 55px 55px;
+  pointer-events: none;
+}
+
+.php-hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.php-glow-one {
+  width: 270px;
+  height: 270px;
+  top: 8%;
+  left: -90px;
+  background: rgba(119, 123, 180, 0.2);
+}
+
+.php-glow-two {
+  width: 300px;
+  height: 300px;
+  bottom: -120px;
+  right: -80px;
+  background: rgba(155, 158, 214, 0.18);
+}
+
+.php-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  text-align: center;
+}
+
+.php-icon-box {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+
+  color: #ffffff;
+  font-size: 32px;
+
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+}
+
+.php-eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+
+  color: #d6d7f5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.php-hero h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.php-hero p {
+  max-width: 720px;
+  margin: 25px auto 0;
+
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.php-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.php-btn {
+  min-height: 52px;
+  padding: 0 24px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+.php-btn-primary {
+  border: 1px solid var(--php-primary);
+  background: var(--php-primary);
+  color: #ffffff;
+}
+
+.php-btn-primary:hover {
+  transform: translateY(-3px);
+  background: var(--php-secondary);
+  border-color: var(--php-secondary);
+}
+
+.php-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.php-btn-secondary:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.php-intro {
+  position: relative;
+  z-index: 5;
+
+  width: min(1100px, 88%);
+  margin: -65px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow: 0 20px 60px rgba(20, 25, 40, 0.12);
+
+  overflow: hidden;
+}
+
+.php-stat {
+  min-height: 125px;
+  padding: 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  border-right: 1px solid #ececf1;
+}
+
+.php-stat:last-child {
+  border-right: none;
+}
+
+.php-stat > svg {
+  flex-shrink: 0;
+
+  font-size: 25px;
+  color: var(--php-primary);
+}
+
+.php-stat div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.php-stat strong {
+  font-size: 17px;
+  color: #1a1d29;
+}
+
+.php-stat span {
+  color: var(--php-muted);
+  font-size: 13px;
+}
+
+/* =========================
+   COMMON SECTIONS
+========================= */
+
+.php-section {
+  padding: 115px 7%;
+}
+
+.php-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.php-section-heading > span,
+.php-benefits-content > span,
+.php-cta-content > span {
+  display: block;
+  margin-bottom: 14px;
+
+  color: var(--php-primary);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.php-section-heading h2 {
+  margin: 0;
+
+  color: #171a25;
+
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.php-section-heading p {
+  margin: 18px auto 0;
+
+  color: var(--php-muted);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.php-features-section {
+  background: #ffffff;
+}
+
+.php-feature-grid {
+  width: min(1150px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.php-feature-card {
+  position: relative;
+
+  padding: 32px;
+  min-height: 245px;
+
+  border: 1px solid #e9e9ef;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  transition: 0.35s ease;
+}
+
+.php-feature-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(119, 123, 180, 0.35);
+
+  box-shadow: 0 20px 50px rgba(30, 25, 60, 0.1);
+}
+
+.php-feature-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: rgba(119, 123, 180, 0.1);
+
+  color: var(--php-primary);
+  font-size: 21px;
+}
+
+.php-feature-card h3 {
+  margin: 0 0 12px;
+
+  color: #202330;
+  font-size: 18px;
+}
+
+.php-feature-card p {
+  margin: 0;
+
+  color: var(--php-muted);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.php-benefits-section {
+  padding: 115px 7%;
+  background: var(--php-light);
+}
+
+.php-benefits-container {
+  width: min(1150px, 100%);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+
+  align-items: center;
+}
+
+.php-benefits-content h2 {
+  margin: 0;
+
+  color: #171a25;
+
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.php-benefits-content p {
+  max-width: 520px;
+  margin: 24px 0 30px;
+
+  color: var(--php-muted);
+
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.php-text-btn {
+  border: none;
+  padding: 0;
+
+  background: transparent;
+
+  color: var(--php-primary);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.php-text-btn:hover {
+  color: var(--php-secondary);
+}
+
+.php-benefit-list {
+  display: grid;
+  gap: 13px;
+}
+
+.php-benefit-item {
+  min-height: 66px;
+  padding: 15px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  border: 1px solid #e5e5eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  transition: 0.3s ease;
+}
+
+.php-benefit-item:hover {
+  transform: translateX(6px);
+
+  border-color: rgba(119, 123, 180, 0.3);
+}
+
+.php-check {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(119, 123, 180, 0.12);
+
+  color: var(--php-primary);
+
+  font-weight: 800;
+}
+
+.php-benefit-item span {
+  color: #353946;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================
+   EXPERTISE
+========================= */
+
+.php-expertise-section {
+  background: #ffffff;
+}
+
+.php-expertise-grid {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.php-expertise-card {
+  min-height: 115px;
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  border: 1px solid #e8e8ed;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  transition: 0.3s ease;
+}
+
+.php-expertise-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(119, 123, 180, 0.35);
+
+  box-shadow: 0 15px 35px rgba(25, 25, 50, 0.08);
+}
+
+.php-expertise-card svg {
+  flex-shrink: 0;
+
+  color: var(--php-primary);
+  font-size: 22px;
+}
+
+.php-expertise-card span {
+  color: #303441;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.php-cta {
+  position: relative;
+
+  padding: 110px 7%;
+
+  text-align: center;
+  color: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(155, 158, 214, 0.2),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #10131e, #18192f);
+}
+
+.php-cta-content {
+  max-width: 760px;
+  margin: auto;
+}
+
+.php-cta-content > span {
+  color: #d6d7f5;
+}
+
+.php-cta h2 {
+  margin: 0;
+
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.php-cta p {
+  max-width: 620px;
+  margin: 20px auto 30px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  line-height: 1.8;
+}
+
+.php-cta-button {
+  border: 1px solid var(--php-primary);
+
+  padding: 15px 25px;
+
+  border-radius: 10px;
+
+  background: var(--php-primary);
+  color: #ffffff;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+.php-cta-button:hover {
+  transform: translateY(-3px);
+
+  background: var(--php-secondary);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .php-feature-grid,
+  .php-expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .php-benefits-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .php-benefits-content {
+    text-align: center;
+  }
+
+  .php-benefits-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .php-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .php-stat {
+    border-right: none;
+    border-bottom: 1px solid #ececf1;
+  }
+
+  .php-stat:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .php-hero {
+    min-height: 600px;
+    padding: 90px 6% 130px;
+  }
+
+  .php-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .php-hero p {
+    font-size: 15px;
+  }
+
+  .php-btn {
+    width: 100%;
+  }
+
+  .php-hero-buttons {
+    width: 100%;
+  }
+
+  .php-section,
+  .php-benefits-section {
+    padding: 80px 6%;
+  }
+
+  .php-feature-grid,
+  .php-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .php-feature-card {
+    min-height: auto;
+  }
+
+  .php-intro {
+    width: 90%;
+  }
+
+  .php-stat {
+    min-height: 105px;
+    padding: 22px;
+  }
+
+  .php-cta {
+    padding: 80px 6%;
+  }
+}

@@ -1,0 +1,201 @@
+
+
+/* ReactJS page - merged/adapted styles from mobile hire page */
+.hire-reactjs {
+  --accent-color: #61DAFB;
+  --accent-light: #E6FDFF;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  background: #f3fbff;
+  padding: 2.25rem 1.25rem;
+  min-height: 100vh;
+}
+
+.hire-reactjs .hire-hero {
+  background: linear-gradient(120deg, var(--accent-light) 0%, #fff 100%);
+  border-radius: 14px;
+  padding: 2.25rem 1.25rem;
+  margin-bottom: 2.25rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hire-reactjs .hire-hero-text {
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-self: center;
+}
+
+.hire-reactjs h1,
+.hire-reactjs .dev-title {
+  color: var(--accent-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.hire-reactjs .hire-illustration {
+  width: 420px;
+  max-width: 420px;
+  justify-self: end;
+}
+
+.hire-reactjs .hire-feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+.hire-reactjs .hire-feature-list li {
+  background: var(--accent-light);
+  color: var(--accent-color);
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 6px 18px rgba(97,218,251,0.04);
+}
+
+.hire-reactjs .hire-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+/* Match Web Developers styling: center section headings and cards */
+.hire-reactjs .hire-section-title { text-align: center; color: var(--accent-color); }
+.hire-reactjs .hire-card { text-align: center; align-items: center; }
+.hire-reactjs .hire-card .dev-title,
+.hire-reactjs .hire-card-title { justify-content: center; }
+.hire-reactjs .hire-process { text-align: center; }
+.hire-reactjs .hire-process-steps { justify-items: center; }
+.hire-reactjs .hire-process-step { justify-content: center; text-align: center; }
+
+.hire-reactjs .hire-card {
+  background: #fff;
+  border: 1px solid rgba(15,23,36,0.06);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  box-shadow: 0 6px 18px rgba(97,218,251,0.04);
+}
+
+.hire-reactjs .hire-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(97,218,251,0.08);
+}
+
+.hire-reactjs .hire-card .dev-title {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hire-reactjs .hire-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Process Section */
+.hire-reactjs .hire-process {
+  background: var(--accent-light);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  margin: 2.5rem 0;
+}
+
+.hire-reactjs .hire-process-title {
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hire-reactjs .hire-process-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 1.5rem;
+}
+
+.hire-reactjs .hire-process-step {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(97,218,251,0.08);
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.hire-reactjs .hire-process-step-icon { color: var(--accent-color); font-size: 1.25rem; }
+
+/* Form Section */
+.hire-reactjs .hire-resume-form {
+  max-width: 640px;
+  margin: 2.5rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(97,218,251,0.08);
+}
+
+.hire-reactjs .hire-resume-form label { color: var(--text-secondary); display: block; margin-bottom: 0.5rem; }
+.hire-reactjs .hire-resume-form input,
+.hire-reactjs .hire-resume-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #f8fafc;
+  margin-bottom: 1rem;
+}
+
+.hire-reactjs .hire-resume-form input:focus,
+.hire-reactjs .hire-resume-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 4px rgba(97,218,251,0.06);
+}
+
+/* Demo Section */
+.hire-reactjs .hire-animation-demo {
+  background: var(--accent-light);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.hire-reactjs .hire-demo-title { color: var(--text-primary); margin-bottom: 1rem; }
+.hire-reactjs .hire-demo-desc { color: var(--text-secondary); max-width: 640px; margin: 0 auto 1.5rem; }
+
+/* Utility / responsive tweaks */
+@media (max-width: 900px) {
+  .hire-reactjs .hire-hero { grid-template-columns: 1fr; position: relative; padding-bottom: 3.5rem; }
+  .hire-reactjs .hire-illustration { position: absolute; right: 1rem; bottom: -12px; width: 46%; max-width: 260px; z-index: 2; }
+  .hire-reactjs .hire-hero-text { z-index: 3; text-align: center; }
+  .hire-reactjs .hire-cards { grid-template-columns: 1fr; }
+  .hire-reactjs .hire-process-steps { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .hire-reactjs .hire-cards { grid-template-columns: 1fr; }
+}

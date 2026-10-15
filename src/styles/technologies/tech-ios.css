@@ -1,0 +1,818 @@
+/* =========================================
+   IOS TECHNOLOGY PAGE
+   ========================================= */
+
+.ios-page {
+  --ios-primary: #2563eb;
+  --ios-secondary: #60a5fa;
+  --ios-dark: #0b1220;
+  --ios-text: #182230;
+  --ios-muted: #667281;
+  --ios-light: #f5f8fc;
+
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: var(--ios-text);
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.ios-hero {
+  position: relative;
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  padding: 100px 24px 150px;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(96, 165, 250, 0.16),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(37, 99, 235, 0.2),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #080f1b 0%,
+      #101a2d 50%,
+      #13294b 100%
+    );
+}
+
+.ios-hero-grid {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.15;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+}
+
+.ios-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+}
+
+.ios-hero-icon {
+  width: 82px;
+  height: 82px;
+
+  margin: 0 auto 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 22px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.95),
+    rgba(96, 165, 250, 0.85)
+  );
+
+  color: #ffffff;
+
+  font-size: 36px;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.28),
+    0 0 35px rgba(96, 165, 250, 0.18);
+}
+
+.ios-eyebrow {
+  margin: 0 0 16px;
+
+  color: #8ebcff;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.ios-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.ios-hero-description {
+  max-width: 720px;
+
+  margin: 25px auto 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.ios-hero-buttons {
+  margin-top: 38px;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.ios-btn {
+  min-height: 52px;
+
+  padding: 0 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.ios-btn-primary {
+  border: 1px solid var(--ios-primary);
+
+  background: linear-gradient(
+    135deg,
+    var(--ios-primary),
+    var(--ios-secondary)
+  );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.ios-btn-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 32px rgba(37, 99, 235, 0.35);
+}
+
+.ios-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+}
+
+.ios-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color: rgba(255, 255, 255, 0.55);
+
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   INTRO STATS
+   ========================================= */
+
+.ios-intro {
+  position: relative;
+  z-index: 5;
+
+  width: calc(100% - 48px);
+  max-width: 1100px;
+
+  margin: -65px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 55px rgba(11, 18, 32, 0.12);
+
+  overflow: hidden;
+}
+
+.ios-stat {
+  padding: 32px 25px;
+
+  text-align: center;
+
+  border-right: 1px solid #e9edf3;
+}
+
+.ios-stat:last-child {
+  border-right: none;
+}
+
+.ios-stat span {
+  display: block;
+
+  color: var(--ios-primary);
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.ios-stat small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: var(--ios-muted);
+
+  font-size: 13px;
+}
+
+/* =========================================
+   COMMON SECTION
+   ========================================= */
+
+.ios-section {
+  padding: 110px 24px;
+}
+
+.ios-section-heading {
+  max-width: 760px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.ios-section-heading > span {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--ios-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.ios-section-heading h2 {
+  margin: 0;
+
+  color: #152033;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.2;
+}
+
+.ios-section-heading p {
+  margin: 18px auto 0;
+
+  color: var(--ios-muted);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.ios-feature-grid {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.ios-feature-card {
+  padding: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5eaf0;
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.ios-feature-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(37, 99, 235, 0.3);
+
+  box-shadow:
+    0 18px 40px rgba(11, 18, 32, 0.09);
+}
+
+.ios-card-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 23px;
+
+  border-radius: 14px;
+
+  background: rgba(37, 99, 235, 0.1);
+
+  color: var(--ios-primary);
+
+  font-size: 23px;
+}
+
+.ios-feature-card h3 {
+  margin: 0 0 12px;
+
+  color: #172235;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+.ios-feature-card p {
+  margin: 0;
+
+  color: var(--ios-muted);
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+/* =========================================
+   BENEFITS
+   ========================================= */
+
+.ios-benefits {
+  padding: 110px 24px;
+
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(96, 165, 250, 0.12),
+      transparent 30%
+    ),
+    #f5f8fc;
+}
+
+.ios-benefits-container {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.ios-benefits-content > span {
+  color: var(--ios-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+.ios-benefits-content h2 {
+  margin: 17px 0 20px;
+
+  color: #142033;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.2;
+}
+
+.ios-benefits-content h2 strong {
+  color: var(--ios-primary);
+
+  font-weight: 700;
+}
+
+.ios-benefits-content p {
+  margin: 0;
+
+  color: var(--ios-muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.ios-benefit-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.ios-benefit-item {
+  min-height: 74px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e9f0;
+
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.ios-benefit-item:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(37, 99, 235, 0.3);
+
+  box-shadow:
+    0 10px 25px rgba(11, 18, 32, 0.07);
+}
+
+.ios-benefit-item svg {
+  flex-shrink: 0;
+
+  color: var(--ios-primary);
+
+  font-size: 16px;
+}
+
+.ios-benefit-item span {
+  color: #344255;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   EXPERTISE
+   ========================================= */
+
+.ios-expertise {
+  background: #ffffff;
+}
+
+.ios-expertise-grid {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.ios-expertise-card {
+  padding: 30px;
+
+  background: #f9fbfd;
+
+  border: 1px solid #e6ebf1;
+
+  border-radius: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.ios-expertise-card:hover {
+  transform: translateY(-5px);
+
+  background: #ffffff;
+
+  border-color: rgba(37, 99, 235, 0.3);
+
+  box-shadow:
+    0 15px 35px rgba(11, 18, 32, 0.08);
+}
+
+.ios-expertise-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+
+  background: rgba(37, 99, 235, 0.1);
+
+  color: var(--ios-primary);
+
+  font-size: 20px;
+}
+
+.ios-expertise-card h3 {
+  margin: 0 0 10px;
+
+  color: #172235;
+
+  font-size: 17px;
+}
+
+.ios-expertise-card p {
+  margin: 0;
+
+  color: var(--ios-muted);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.ios-cta {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 100px 24px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(96, 165, 250, 0.2),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #080f1b,
+      #13294b
+    );
+
+  text-align: center;
+}
+
+.ios-cta-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+}
+
+.ios-cta-content > svg {
+  margin-bottom: 20px;
+
+  color: #8ebcff;
+
+  font-size: 38px;
+}
+
+.ios-cta h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(30px, 4vw, 46px);
+
+  line-height: 1.2;
+}
+
+.ios-cta p {
+  max-width: 600px;
+
+  margin: 18px auto 30px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .ios-hero {
+    min-height: 600px;
+
+    padding: 90px 22px 125px;
+  }
+
+  .ios-feature-grid,
+  .ios-expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ios-benefits-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .ios-hero {
+    min-height: auto;
+
+    padding: 80px 18px 115px;
+  }
+
+  .ios-hero-icon {
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 22px;
+
+    border-radius: 18px;
+
+    font-size: 29px;
+  }
+
+  .ios-eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .ios-hero h1 {
+    font-size: 38px;
+  }
+
+  .ios-hero-description {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .ios-hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .ios-btn {
+    width: 100%;
+  }
+
+  .ios-intro {
+    width: calc(100% - 30px);
+
+    margin-top: -50px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .ios-stat {
+    padding: 23px 20px;
+
+    border-right: none;
+
+    border-bottom: 1px solid #e9edf3;
+  }
+
+  .ios-stat:last-child {
+    border-bottom: none;
+  }
+
+  .ios-section {
+    padding: 80px 18px;
+  }
+
+  .ios-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .ios-section-heading h2 {
+    font-size: 32px;
+  }
+
+  .ios-section-heading p {
+    font-size: 14px;
+  }
+
+  .ios-feature-grid,
+  .ios-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ios-feature-card,
+  .ios-expertise-card {
+    padding: 26px;
+  }
+
+  .ios-benefits {
+    padding: 80px 18px;
+  }
+
+  .ios-benefits-content h2 {
+    font-size: 32px;
+  }
+
+  .ios-benefits-content p {
+    font-size: 14px;
+  }
+
+  .ios-benefit-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ios-cta {
+    padding: 80px 18px;
+  }
+
+  .ios-cta h2 {
+    font-size: 32px;
+  }
+
+  .ios-cta p {
+    font-size: 14px;
+  }
+}

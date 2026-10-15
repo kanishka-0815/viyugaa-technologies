@@ -1,0 +1,1091 @@
+/* =========================================================
+   ASP.NET CORE TECHNOLOGY PAGE
+   Viyugaa Technologies
+   ========================================================= */
+
+.aspnetcore-modern-page {
+  --aspnetcore-primary: #087ea4;
+  --aspnetcore-secondary: #18a7c9;
+  --aspnetcore-dark: #101828;
+  --aspnetcore-text: #344054;
+  --aspnetcore-muted: #667085;
+  --aspnetcore-light: #f7fbfc;
+  --aspnetcore-border: #e4e7ec;
+  --aspnetcore-white: #ffffff;
+
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--aspnetcore-text);
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.aspnetcore-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.aspnetcore-hero {
+  position: relative;
+  min-height: 590px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 110px 20px 100px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(24, 167, 201, 0.2),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 75%,
+      rgba(8, 126, 164, 0.24),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #07131a 0%,
+      #0c2029 50%,
+      #0c3542 100%
+    );
+}
+
+.aspnetcore-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 60px 60px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent
+  );
+
+  pointer-events: none;
+}
+
+.aspnetcore-hero-glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(10px);
+
+  pointer-events: none;
+}
+
+.aspnetcore-hero-glow-one {
+  width: 280px;
+  height: 280px;
+
+  top: -120px;
+  left: -80px;
+
+  background: rgba(24, 167, 201, 0.14);
+}
+
+.aspnetcore-hero-glow-two {
+  width: 340px;
+  height: 340px;
+
+  right: -120px;
+  bottom: -160px;
+
+  background: rgba(8, 126, 164, 0.2);
+}
+
+.aspnetcore-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(850px, 100%);
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.aspnetcore-hero-icon-wrapper {
+  width: 76px;
+  height: 76px;
+
+  margin: 0 auto 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(12px);
+}
+
+.aspnetcore-hero-icon {
+  font-size: 35px;
+  color: #9de6f4;
+}
+
+.aspnetcore-eyebrow {
+  margin: 0 0 15px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #8edbeb;
+}
+
+.aspnetcore-hero-title {
+  margin: 0;
+
+  font-size: clamp(42px, 6vw, 72px);
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+
+  color: #ffffff;
+}
+
+.aspnetcore-hero-description {
+  max-width: 700px;
+
+  margin: 26px auto 0;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.aspnetcore-hero-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 35px;
+
+  flex-wrap: wrap;
+}
+
+.aspnetcore-primary-btn,
+.aspnetcore-secondary-btn {
+  min-height: 50px;
+
+  padding: 0 25px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.aspnetcore-primary-btn {
+  border: 1px solid transparent;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    var(--aspnetcore-primary),
+    var(--aspnetcore-secondary)
+  );
+
+  box-shadow:
+    0 12px 30px rgba(8, 126, 164, 0.28);
+}
+
+.aspnetcore-primary-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 16px 35px rgba(8, 126, 164, 0.38);
+}
+
+.aspnetcore-secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.aspnetcore-secondary-btn:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* =========================================================
+   INTRO STRIP
+   ========================================================= */
+
+.aspnetcore-intro-strip {
+  position: relative;
+  z-index: 3;
+
+  width: min(1050px, calc(100% - 40px));
+
+  margin: -48px auto 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 25px;
+
+  padding: 25px 35px;
+
+  border: 1px solid var(--aspnetcore-border);
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow:
+    0 20px 60px rgba(16, 24, 40, 0.09);
+
+  backdrop-filter: blur(10px);
+}
+
+.aspnetcore-intro-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  min-width: 0;
+}
+
+.aspnetcore-intro-item > svg {
+  flex-shrink: 0;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 11px;
+
+  border-radius: 12px;
+
+  color: var(--aspnetcore-primary);
+
+  background: #eaf8fb;
+}
+
+.aspnetcore-intro-item div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.aspnetcore-intro-item span {
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: var(--aspnetcore-muted);
+}
+
+.aspnetcore-intro-item strong {
+  font-size: 14px;
+
+  color: var(--aspnetcore-dark);
+}
+
+.aspnetcore-intro-divider {
+  width: 1px;
+  height: 45px;
+
+  background: var(--aspnetcore-border);
+}
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.aspnetcore-section-heading {
+  max-width: 760px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.aspnetcore-section-label {
+  margin: 0 0 13px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+
+  color: var(--aspnetcore-primary);
+}
+
+.aspnetcore-section-heading h2,
+.aspnetcore-about-content h2,
+.aspnetcore-success-content h2 {
+  margin: 0;
+
+  color: var(--aspnetcore-dark);
+
+  font-size: clamp(30px, 4vw, 46px);
+
+  line-height: 1.15;
+
+  letter-spacing: -1.3px;
+}
+
+.aspnetcore-section-heading > p:last-child {
+  max-width: 680px;
+
+  margin: 18px auto 0;
+
+  color: var(--aspnetcore-muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.aspnetcore-features-section {
+  padding: 115px 0 105px;
+
+  background: #ffffff;
+}
+
+.aspnetcore-feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.aspnetcore-feature-card {
+  position: relative;
+
+  padding: 32px;
+
+  border: 1px solid var(--aspnetcore-border);
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 30px rgba(16, 24, 40, 0.035);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.aspnetcore-feature-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #a9dce8;
+
+  box-shadow:
+    0 20px 45px rgba(16, 24, 40, 0.09);
+}
+
+.aspnetcore-feature-number {
+  position: absolute;
+
+  top: 22px;
+  right: 24px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color: #81bdcc;
+}
+
+.aspnetcore-feature-icon {
+  width: 55px;
+  height: 55px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  color: var(--aspnetcore-primary);
+
+  background: #edf9fb;
+
+  font-size: 22px;
+}
+
+.aspnetcore-feature-card h3 {
+  margin: 0 0 12px;
+
+  color: var(--aspnetcore-dark);
+
+  font-size: 19px;
+
+  line-height: 1.3;
+}
+
+.aspnetcore-feature-card p {
+  margin: 0;
+
+  color: var(--aspnetcore-muted);
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.aspnetcore-about-section {
+  padding: 110px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5fafb 0%,
+      #ffffff 55%,
+      #f2f9fb 100%
+    );
+}
+
+.aspnetcore-about-grid {
+  display: grid;
+
+  grid-template-columns: 0.95fr 1.05fr;
+
+  gap: 85px;
+
+  align-items: center;
+}
+
+.aspnetcore-about-content > p:not(.aspnetcore-section-label) {
+  margin: 22px 0 0;
+
+  color: var(--aspnetcore-muted);
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+.aspnetcore-text-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 30px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: var(--aspnetcore-primary);
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.aspnetcore-text-btn span {
+  font-size: 20px;
+
+  transition: transform 0.25s ease;
+}
+
+.aspnetcore-text-btn:hover span {
+  transform: translateX(5px);
+}
+
+.aspnetcore-benefits {
+  display: grid;
+
+  gap: 12px;
+}
+
+.aspnetcore-benefit-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-height: 66px;
+
+  padding: 13px 18px;
+
+  border: 1px solid var(--aspnetcore-border);
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  color: #344054;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 5px 18px rgba(16, 24, 40, 0.035);
+}
+
+.aspnetcore-benefit-check {
+  flex-shrink: 0;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e5f6fa;
+
+  color: var(--aspnetcore-primary);
+
+  font-size: 14px;
+
+  font-weight: 900;
+}
+
+/* =========================================================
+   EXPERTISE
+   ========================================================= */
+
+.aspnetcore-expertise-section {
+  padding: 115px 0;
+
+  background: #ffffff;
+}
+
+.aspnetcore-expertise-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.aspnetcore-expertise-card {
+  position: relative;
+
+  min-height: 180px;
+
+  padding: 27px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  border: 1px solid var(--aspnetcore-border);
+
+  border-radius: 17px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.aspnetcore-expertise-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 130px;
+  height: 130px;
+
+  right: -55px;
+  bottom: -65px;
+
+  border-radius: 50%;
+
+  background: #eaf8fb;
+
+  transition: transform 0.3s ease;
+}
+
+.aspnetcore-expertise-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #a9dce8;
+
+  box-shadow:
+    0 18px 40px rgba(16, 24, 40, 0.08);
+}
+
+.aspnetcore-expertise-card:hover::after {
+  transform: scale(1.35);
+}
+
+.aspnetcore-expertise-index {
+  position: relative;
+
+  z-index: 2;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  color: #66aebb;
+}
+
+.aspnetcore-expertise-icon {
+  position: relative;
+
+  z-index: 2;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 15px;
+
+  border-radius: 11px;
+
+  color: var(--aspnetcore-primary);
+
+  background: #edf9fb;
+}
+
+.aspnetcore-expertise-card h3 {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 17px 0 0;
+
+  max-width: 80%;
+
+  color: var(--aspnetcore-dark);
+
+  font-size: 17px;
+
+  line-height: 1.4;
+}
+
+.aspnetcore-expertise-arrow {
+  position: absolute;
+
+  z-index: 3;
+
+  right: 23px;
+  bottom: 21px;
+
+  color: var(--aspnetcore-primary);
+
+  font-size: 22px;
+
+  opacity: 0;
+
+  transform: translateX(-5px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.aspnetcore-expertise-card:hover
+  .aspnetcore-expertise-arrow {
+  opacity: 1;
+
+  transform: translateX(0);
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.aspnetcore-success-section {
+  padding: 100px 0 115px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #07131a 0%,
+      #0d222b 55%,
+      #0d3540 100%
+    );
+}
+
+.aspnetcore-success-inner {
+  display: grid;
+
+  grid-template-columns: 1.25fr 0.75fr;
+
+  gap: 65px;
+
+  align-items: center;
+}
+
+.aspnetcore-success-content
+  .aspnetcore-section-label {
+  color: #8edceb;
+}
+
+.aspnetcore-success-content h2 {
+  color: #ffffff;
+}
+
+.aspnetcore-success-content > p:last-child {
+  max-width: 650px;
+
+  margin: 22px 0 0;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+.aspnetcore-success-box {
+  padding: 35px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.2);
+
+  backdrop-filter: blur(12px);
+}
+
+.aspnetcore-success-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 14px;
+
+  background: rgba(24, 167, 201, 0.16);
+
+  color: #a3e6f2;
+
+  font-size: 20px;
+}
+
+.aspnetcore-success-box h3 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+}
+
+.aspnetcore-success-box p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.aspnetcore-success-box button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 25px;
+
+  padding: 13px 20px;
+
+  border: 0;
+
+  border-radius: 9px;
+
+  color: #ffffff;
+
+  background: var(--aspnetcore-primary);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.aspnetcore-success-box button:hover {
+  transform: translateY(-2px);
+
+  background: var(--aspnetcore-secondary);
+}
+
+.aspnetcore-success-box button span {
+  font-size: 18px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .aspnetcore-feature-grid,
+  .aspnetcore-expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aspnetcore-about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .aspnetcore-success-inner {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .aspnetcore-intro-strip {
+    flex-wrap: wrap;
+  }
+
+  .aspnetcore-intro-divider {
+    display: none;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .aspnetcore-container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .aspnetcore-hero {
+    min-height: 560px;
+
+    padding: 90px 18px;
+  }
+
+  .aspnetcore-hero-icon-wrapper {
+    width: 66px;
+    height: 66px;
+
+    border-radius: 18px;
+  }
+
+  .aspnetcore-hero-icon {
+    font-size: 29px;
+  }
+
+  .aspnetcore-eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .aspnetcore-hero-title {
+    font-size: 42px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .aspnetcore-hero-description {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .aspnetcore-hero-actions {
+    flex-direction: column;
+  }
+
+  .aspnetcore-primary-btn,
+  .aspnetcore-secondary-btn {
+    width: 100%;
+
+    max-width: 300px;
+  }
+
+  .aspnetcore-intro-strip {
+    width: calc(100% - 28px);
+
+    margin-top: -35px;
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    padding: 22px;
+  }
+
+  .aspnetcore-intro-item {
+    width: 100%;
+  }
+
+  .aspnetcore-features-section,
+  .aspnetcore-about-section,
+  .aspnetcore-expertise-section {
+    padding: 80px 0;
+  }
+
+  .aspnetcore-success-section {
+    padding: 80px 0;
+  }
+
+  .aspnetcore-section-heading {
+    margin-bottom: 38px;
+  }
+
+  .aspnetcore-section-heading h2,
+  .aspnetcore-about-content h2,
+  .aspnetcore-success-content h2 {
+    font-size: 32px;
+  }
+
+  .aspnetcore-feature-grid,
+  .aspnetcore-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aspnetcore-feature-card {
+    padding: 27px;
+  }
+
+  .aspnetcore-about-grid {
+    gap: 40px;
+  }
+
+  .aspnetcore-success-box {
+    padding: 27px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+  .aspnetcore-hero-title {
+    font-size: 36px;
+  }
+
+  .aspnetcore-hero-description {
+    font-size: 14px;
+  }
+
+  .aspnetcore-section-heading h2,
+  .aspnetcore-about-content h2,
+  .aspnetcore-success-content h2 {
+    font-size: 29px;
+  }
+
+  .aspnetcore-benefit-item {
+    font-size: 13px;
+  }
+}

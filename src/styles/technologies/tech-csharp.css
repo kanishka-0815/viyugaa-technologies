@@ -1,0 +1,603 @@
+.csharp-page {
+  --csharp-primary: #512bd4;
+  --csharp-secondary: #7c5ce8;
+  --csharp-dark: #101522;
+  --csharp-text: #202534;
+  --csharp-muted: #6d7482;
+  --csharp-light: #f7f7fa;
+
+  color: var(--csharp-text);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.csharp-hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 7% 150px;
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(81, 43, 212, 0.25),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(124, 92, 232, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #0d1220 0%, #17172d 50%, #111827 100%);
+  color: #ffffff;
+  isolation: isolate;
+}
+
+.csharp-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 55px 55px;
+  pointer-events: none;
+}
+
+.csharp-hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.csharp-glow-one {
+  width: 260px;
+  height: 260px;
+  top: 10%;
+  left: -80px;
+  background: rgba(81, 43, 212, 0.2);
+}
+
+.csharp-glow-two {
+  width: 300px;
+  height: 300px;
+  bottom: -120px;
+  right: -80px;
+  background: rgba(124, 92, 232, 0.18);
+}
+
+.csharp-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  text-align: center;
+}
+
+.csharp-icon-box {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  color: #ffffff;
+  font-size: 32px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+}
+
+.csharp-eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #c9bbff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.csharp-hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.csharp-hero p {
+  max-width: 720px;
+  margin: 25px auto 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.csharp-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.csharp-btn {
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.csharp-btn-primary {
+  border: 1px solid var(--csharp-primary);
+  background: var(--csharp-primary);
+  color: #ffffff;
+}
+
+.csharp-btn-primary:hover {
+  transform: translateY(-3px);
+  background: var(--csharp-secondary);
+  border-color: var(--csharp-secondary);
+}
+
+.csharp-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.csharp-btn-secondary:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.csharp-intro {
+  position: relative;
+  z-index: 5;
+  width: min(1100px, 88%);
+  margin: -65px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(20, 25, 40, 0.12);
+  overflow: hidden;
+}
+
+.csharp-stat {
+  min-height: 125px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-right: 1px solid #ececf1;
+}
+
+.csharp-stat:last-child {
+  border-right: none;
+}
+
+.csharp-stat > svg {
+  flex-shrink: 0;
+  font-size: 25px;
+  color: var(--csharp-primary);
+}
+
+.csharp-stat div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.csharp-stat strong {
+  font-size: 17px;
+  color: #1a1d29;
+}
+
+.csharp-stat span {
+  color: var(--csharp-muted);
+  font-size: 13px;
+}
+
+/* =========================
+   COMMON SECTIONS
+========================= */
+
+.csharp-section {
+  padding: 115px 7%;
+}
+
+.csharp-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.csharp-section-heading > span,
+.csharp-benefits-content > span,
+.csharp-cta-content > span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--csharp-primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.csharp-section-heading h2 {
+  margin: 0;
+  color: #171a25;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.csharp-section-heading p {
+  margin: 18px auto 0;
+  color: var(--csharp-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.csharp-features-section {
+  background: #ffffff;
+}
+
+.csharp-feature-grid {
+  width: min(1150px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.csharp-feature-card {
+  position: relative;
+  padding: 32px;
+  min-height: 245px;
+  border: 1px solid #e9e9ef;
+  border-radius: 16px;
+  background: #ffffff;
+  transition: 0.35s ease;
+}
+
+.csharp-feature-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(81, 43, 212, 0.3);
+  box-shadow: 0 20px 50px rgba(30, 25, 60, 0.1);
+}
+
+.csharp-feature-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: rgba(81, 43, 212, 0.08);
+  color: var(--csharp-primary);
+  font-size: 21px;
+}
+
+.csharp-feature-card h3 {
+  margin: 0 0 12px;
+  color: #202330;
+  font-size: 18px;
+}
+
+.csharp-feature-card p {
+  margin: 0;
+  color: var(--csharp-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.csharp-benefits-section {
+  padding: 115px 7%;
+  background: var(--csharp-light);
+}
+
+.csharp-benefits-container {
+  width: min(1150px, 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.csharp-benefits-content h2 {
+  margin: 0;
+  color: #171a25;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.csharp-benefits-content p {
+  max-width: 520px;
+  margin: 24px 0 30px;
+  color: var(--csharp-muted);
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.csharp-text-btn {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: var(--csharp-primary);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.csharp-text-btn:hover {
+  color: var(--csharp-secondary);
+}
+
+.csharp-benefit-list {
+  display: grid;
+  gap: 13px;
+}
+
+.csharp-benefit-item {
+  min-height: 66px;
+  padding: 15px 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #e5e5eb;
+  border-radius: 12px;
+  background: #ffffff;
+  transition: 0.3s ease;
+}
+
+.csharp-benefit-item:hover {
+  transform: translateX(6px);
+  border-color: rgba(81, 43, 212, 0.25);
+}
+
+.csharp-check {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(81, 43, 212, 0.1);
+  color: var(--csharp-primary);
+  font-weight: 800;
+}
+
+.csharp-benefit-item span {
+  color: #353946;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================
+   EXPERTISE
+========================= */
+
+.csharp-expertise-section {
+  background: #ffffff;
+}
+
+.csharp-expertise-grid {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.csharp-expertise-card {
+  min-height: 115px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #e8e8ed;
+  border-radius: 14px;
+  background: #ffffff;
+  transition: 0.3s ease;
+}
+
+.csharp-expertise-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(81, 43, 212, 0.3);
+  box-shadow: 0 15px 35px rgba(25, 25, 50, 0.08);
+}
+
+.csharp-expertise-card svg {
+  flex-shrink: 0;
+  color: var(--csharp-primary);
+  font-size: 22px;
+}
+
+.csharp-expertise-card span {
+  color: #303441;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.csharp-cta {
+  position: relative;
+  padding: 110px 7%;
+  text-align: center;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(124, 92, 232, 0.2),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #10131e, #1a1730);
+}
+
+.csharp-cta-content {
+  max-width: 760px;
+  margin: auto;
+}
+
+.csharp-cta-content > span {
+  color: #c9bbff;
+}
+
+.csharp-cta h2 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.csharp-cta p {
+  max-width: 620px;
+  margin: 20px auto 30px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+}
+
+.csharp-cta-button {
+  border: 1px solid var(--csharp-primary);
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: var(--csharp-primary);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.csharp-cta-button:hover {
+  transform: translateY(-3px);
+  background: var(--csharp-secondary);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .csharp-feature-grid,
+  .csharp-expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .csharp-benefits-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .csharp-benefits-content {
+    text-align: center;
+  }
+
+  .csharp-benefits-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .csharp-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .csharp-stat {
+    border-right: none;
+    border-bottom: 1px solid #ececf1;
+  }
+
+  .csharp-stat:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .csharp-hero {
+    min-height: 600px;
+    padding: 90px 6% 130px;
+  }
+
+  .csharp-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .csharp-hero p {
+    font-size: 15px;
+  }
+
+  .csharp-btn {
+    width: 100%;
+  }
+
+  .csharp-hero-buttons {
+    width: 100%;
+  }
+
+  .csharp-section,
+  .csharp-benefits-section {
+    padding: 80px 6%;
+  }
+
+  .csharp-feature-grid,
+  .csharp-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .csharp-feature-card {
+    min-height: auto;
+  }
+
+  .csharp-intro {
+    width: 90%;
+  }
+
+  .csharp-stat {
+    min-height: 105px;
+    padding: 22px;
+  }
+
+  .csharp-cta {
+    padding: 80px 6%;
+  }
+}

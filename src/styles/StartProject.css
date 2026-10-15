@@ -1,0 +1,782 @@
+/* =========================================================
+   VIYUGAA TECHNOLOGIES
+   START A PROJECT
+   PROFESSIONAL / CLASSIC UI
+========================================================= */
+
+.start-project-page {
+  min-height: 100vh;
+
+  background: #f7f6f2;
+
+  color: #172033;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.start-project-header {
+  position: relative;
+
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 60px 24px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e4e0d8;
+}
+
+.start-project-header-inner {
+  max-width: 760px;
+
+  margin: 0 auto;
+}
+
+.start-project-eyebrow {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #9b7a3d;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3.5px;
+
+  text-transform: uppercase;
+}
+
+.start-project-header h1 {
+  margin: 0;
+
+  color: #172033;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 6vw, 62px);
+
+  line-height: 1.1;
+
+  font-weight: 500;
+
+  letter-spacing: -1px;
+}
+
+.start-project-header-line {
+  height: 2px;
+
+  margin: 20px auto;
+
+  background: #b4935a;
+}
+
+.start-project-header p {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #6c7482;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.start-project-section {
+  padding: 100px 0 90px;
+}
+
+.start-project-container {
+  width: min(1180px, calc(100% - 48px));
+
+  margin: 0 auto;
+}
+
+.start-project-grid {
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 80px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   LEFT CONTACT INFORMATION
+========================================================= */
+
+.project-contact-info {
+  padding-top: 20px;
+}
+
+.contact-info-label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #9b7a3d;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.project-contact-info h2 {
+  margin: 0 0 22px;
+
+  color: #172033;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(38px, 4vw, 52px);
+
+  line-height: 1.2;
+
+  font-weight: 500;
+}
+
+.contact-info-description {
+  max-width: 500px;
+
+  margin: 0 0 42px;
+
+  color: #6d7583;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   CONTACT ITEMS
+========================================================= */
+
+.project-contact-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  width: 100%;
+
+  max-width: 500px;
+
+  margin-bottom: 24px;
+
+  padding: 18px 0;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #dedbd3;
+
+  transition:
+    padding-left 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project-contact-item:hover {
+  padding-left: 7px;
+
+  border-color: #b4935a;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #9b7a3d;
+
+  background: #f3efe6;
+
+  border: 1px solid #e1d9c9;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 19px;
+
+  font-weight: 600;
+}
+
+.whatsapp-icon {
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+}
+
+.phone-icon {
+  font-size: 23px;
+}
+
+.contact-item-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.contact-item-content small {
+  color: #8a919d;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.contact-item-content strong {
+  color: #263044;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   CONTACT NOTE
+========================================================= */
+
+.project-contact-note {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  max-width: 450px;
+
+  margin-top: 38px;
+}
+
+.project-contact-note span {
+  flex-shrink: 0;
+
+  width: 25px;
+  height: 1px;
+
+  margin-top: 10px;
+
+  background: #b4935a;
+}
+
+.project-contact-note p {
+  margin: 0;
+
+  color: #8a919d;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   ENQUIRY CARD
+========================================================= */
+
+.project-enquiry-card {
+  padding: 45px;
+
+  background: #ffffff;
+
+  border: 1px solid #ddd9d1;
+
+  box-shadow:
+    0 15px 45px rgba(23, 32, 51, 0.06);
+}
+
+.enquiry-header {
+  padding-bottom: 28px;
+
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #e7e3dc;
+}
+
+.enquiry-header span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #9b7a3d;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+}
+
+.enquiry-header h3 {
+  margin: 0 0 10px;
+
+  color: #172033;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 31px;
+
+  font-weight: 500;
+}
+
+.enquiry-header p {
+  margin: 0;
+
+  color: #7a828f;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.project-form {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 20px;
+}
+
+.project-form-group {
+  margin-bottom: 22px;
+}
+
+.project-form-group:nth-child(5) {
+  grid-column: 1 / -1;
+}
+
+.project-form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #3c4555;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+}
+
+.project-form-group label span {
+  color: #a17838;
+}
+
+.project-form-group input,
+.project-form-group select,
+.project-form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  color: #273144;
+
+  background: #fbfaf8;
+
+  border: 1px solid #dcd8d0;
+
+  border-radius: 0;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.project-form-group input {
+  height: 48px;
+}
+
+.project-form-group select {
+  height: 48px;
+
+  cursor: pointer;
+}
+
+.project-form-group textarea {
+  min-height: 140px;
+
+  resize: vertical;
+
+  line-height: 1.7;
+}
+
+.project-form-group input::placeholder,
+.project-form-group textarea::placeholder {
+  color: #a0a5ad;
+}
+
+.project-form-group input:focus,
+.project-form-group select:focus,
+.project-form-group textarea:focus {
+  background: #ffffff;
+
+  border-color: #b4935a;
+
+  box-shadow:
+    0 0 0 3px rgba(180, 147, 90, 0.08);
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.project-submit-button {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  min-height: 54px;
+
+  margin-top: 5px;
+
+  padding: 10px 12px 10px 22px;
+
+  color: #ffffff;
+
+  background: #172033;
+
+  border: 1px solid #172033;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.4px;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-submit-button:hover:not(:disabled) {
+  background: #9b7a3d;
+
+  border-color: #9b7a3d;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(23, 32, 51, 0.12);
+}
+
+.project-submit-button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.65;
+}
+
+.submit-arrow {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   SUCCESS / ERROR
+========================================================= */
+
+.project-success-message,
+.project-error-message {
+  grid-column: 1 / -1;
+
+  margin-top: 18px;
+
+  padding: 14px 16px;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+.project-success-message {
+  color: #356644;
+
+  background: #eff6f0;
+
+  border: 1px solid #cddfcf;
+}
+
+.project-error-message {
+  color: #9a4545;
+
+  background: #faf0f0;
+
+  border: 1px solid #e5caca;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-project-wrapper {
+  padding: 0 24px 80px;
+
+  text-align: center;
+}
+
+.back-project-button {
+  padding: 10px 0;
+
+  color: #777f8b;
+
+  background: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition:
+    color 0.3s ease;
+}
+
+.back-project-button:hover {
+  color: #9b7a3d;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .start-project-container {
+    width: min(100% - 40px, 720px);
+  }
+
+  .start-project-grid {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .project-contact-info {
+    padding-top: 0;
+  }
+
+  .project-contact-item {
+    max-width: 100%;
+  }
+
+  .project-contact-note {
+    max-width: 100%;
+  }
+
+  .project-enquiry-card {
+    padding: 40px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .start-project-header {
+    min-height: 270px;
+
+    padding: 50px 20px;
+  }
+
+  .start-project-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .start-project-header h1 {
+    font-size: 42px;
+  }
+
+  .start-project-header p {
+    font-size: 14px;
+  }
+
+
+  .start-project-section {
+    padding: 65px 0 60px;
+  }
+
+  .start-project-container {
+    width: calc(100% - 30px);
+  }
+
+
+  .project-contact-info h2 {
+    font-size: 38px;
+  }
+
+  .contact-info-description {
+    font-size: 14px;
+
+    margin-bottom: 30px;
+  }
+
+
+  .project-contact-item {
+    gap: 14px;
+
+    padding: 15px 0;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-item-content strong {
+    font-size: 13px;
+  }
+
+
+  .project-enquiry-card {
+    padding: 25px 20px;
+  }
+
+  .enquiry-header {
+    padding-bottom: 22px;
+
+    margin-bottom: 25px;
+  }
+
+  .enquiry-header h3 {
+    font-size: 27px;
+  }
+
+
+  .project-form {
+    grid-template-columns: 1fr;
+  }
+
+  .project-form-group:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .project-submit-button {
+    grid-column: auto;
+  }
+
+  .project-success-message,
+  .project-error-message {
+    grid-column: auto;
+  }
+
+
+  .back-project-wrapper {
+    padding-bottom: 60px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .start-project-header h1 {
+    font-size: 37px;
+  }
+
+  .project-contact-info h2 {
+    font-size: 34px;
+  }
+
+  .project-enquiry-card {
+    padding: 22px 17px;
+  }
+
+  .enquiry-header h3 {
+    font-size: 25px;
+  }
+
+}

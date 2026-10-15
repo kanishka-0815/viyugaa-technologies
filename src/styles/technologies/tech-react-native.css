@@ -1,0 +1,745 @@
+/* =========================================
+   REACT NATIVE TECHNOLOGY PAGE
+   ========================================= */
+
+.reactnative-page {
+  --reactnative-primary: #087ea4;
+  --reactnative-secondary: #18a7c9;
+  --reactnative-dark: #071923;
+  --reactnative-text: #18242b;
+  --reactnative-muted: #66747c;
+  --reactnative-light: #f5f9fb;
+
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: var(--reactnative-text);
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.reactnative-hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 100px 24px 150px;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(24, 167, 201, 0.18),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(8, 126, 164, 0.2),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #06151d 0%,
+      #0a202b 50%,
+      #092c3a 100%
+    );
+}
+
+.reactnative-hero-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.16;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+}
+
+.reactnative-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.reactnative-hero-icon {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 22px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(8, 126, 164, 0.95),
+    rgba(24, 167, 201, 0.8)
+  );
+
+  color: #ffffff;
+  font-size: 36px;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.28),
+    0 0 35px rgba(24, 167, 201, 0.18);
+}
+
+.reactnative-eyebrow {
+  margin: 0 0 16px;
+
+  color: #65cce5;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.reactnative-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.reactnative-hero-description {
+  max-width: 720px;
+  margin: 25px auto 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.reactnative-hero-buttons {
+  margin-top: 38px;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.reactnative-btn {
+  min-height: 52px;
+  padding: 0 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reactnative-btn-primary {
+  border: 1px solid var(--reactnative-primary);
+
+  background: linear-gradient(
+    135deg,
+    var(--reactnative-primary),
+    var(--reactnative-secondary)
+  );
+
+  color: #ffffff;
+
+  box-shadow: 0 10px 25px rgba(8, 126, 164, 0.25);
+}
+
+.reactnative-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 32px rgba(8, 126, 164, 0.35);
+}
+
+.reactnative-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.reactnative-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.55);
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   INTRO STATS
+   ========================================= */
+
+.reactnative-intro {
+  position: relative;
+  z-index: 5;
+
+  width: calc(100% - 48px);
+  max-width: 1100px;
+
+  margin: -65px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 55px rgba(7, 25, 35, 0.12);
+
+  overflow: hidden;
+}
+
+.reactnative-stat {
+  padding: 32px 25px;
+  text-align: center;
+
+  border-right: 1px solid #e9eef0;
+}
+
+.reactnative-stat:last-child {
+  border-right: none;
+}
+
+.reactnative-stat span {
+  display: block;
+
+  color: var(--reactnative-primary);
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.reactnative-stat small {
+  display: block;
+  margin-top: 7px;
+
+  color: var(--reactnative-muted);
+
+  font-size: 13px;
+}
+
+/* =========================================
+   COMMON SECTION
+   ========================================= */
+
+.reactnative-section {
+  padding: 110px 24px;
+}
+
+.reactnative-section-heading {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.reactnative-section-heading > span {
+  display: inline-block;
+  margin-bottom: 14px;
+
+  color: var(--reactnative-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.reactnative-section-heading h2 {
+  margin: 0;
+
+  color: #13252e;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+}
+
+.reactnative-section-heading p {
+  margin: 18px auto 0;
+
+  color: var(--reactnative-muted);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.reactnative-features {
+  background: #ffffff;
+}
+
+.reactnative-feature-grid {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.reactnative-feature-card {
+  padding: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7eef1;
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.reactnative-feature-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(8, 126, 164, 0.3);
+
+  box-shadow:
+    0 18px 40px rgba(7, 25, 35, 0.09);
+}
+
+.reactnative-card-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 23px;
+
+  border-radius: 14px;
+
+  background: rgba(8, 126, 164, 0.1);
+
+  color: var(--reactnative-primary);
+
+  font-size: 23px;
+}
+
+.reactnative-feature-card h3 {
+  margin: 0 0 12px;
+
+  color: #172a33;
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.reactnative-feature-card p {
+  margin: 0;
+
+  color: var(--reactnative-muted);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =========================================
+   BENEFITS
+   ========================================= */
+
+.reactnative-benefits {
+  padding: 110px 24px;
+
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(24, 167, 201, 0.12),
+      transparent 30%
+    ),
+    #f5f9fb;
+}
+
+.reactnative-benefits-container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+
+  align-items: center;
+}
+
+.reactnative-benefits-content > span {
+  color: var(--reactnative-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.reactnative-benefits-content h2 {
+  margin: 17px 0 20px;
+
+  color: #142831;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+}
+
+.reactnative-benefits-content h2 strong {
+  color: var(--reactnative-primary);
+  font-weight: 700;
+}
+
+.reactnative-benefits-content p {
+  margin: 0;
+
+  color: var(--reactnative-muted);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.reactnative-benefit-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.reactnative-benefit-item {
+  min-height: 74px;
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3ecef;
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.reactnative-benefit-item:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(8, 126, 164, 0.3);
+
+  box-shadow: 0 10px 25px rgba(7, 25, 35, 0.07);
+}
+
+.reactnative-benefit-item svg {
+  flex-shrink: 0;
+
+  color: var(--reactnative-primary);
+  font-size: 16px;
+}
+
+.reactnative-benefit-item span {
+  color: #34454d;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* =========================================
+   EXPERTISE
+   ========================================= */
+
+.reactnative-expertise {
+  background: #ffffff;
+}
+
+.reactnative-expertise-grid {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.reactnative-expertise-card {
+  padding: 30px;
+
+  background: #f9fbfc;
+
+  border: 1px solid #e8eef0;
+  border-radius: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.reactnative-expertise-card:hover {
+  transform: translateY(-5px);
+
+  background: #ffffff;
+
+  border-color: rgba(8, 126, 164, 0.3);
+
+  box-shadow: 0 15px 35px rgba(7, 25, 35, 0.08);
+}
+
+.reactnative-expertise-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+
+  background: rgba(8, 126, 164, 0.1);
+
+  color: var(--reactnative-primary);
+
+  font-size: 20px;
+}
+
+.reactnative-expertise-card h3 {
+  margin: 0 0 10px;
+
+  color: #172a33;
+
+  font-size: 17px;
+}
+
+.reactnative-expertise-card p {
+  margin: 0;
+
+  color: var(--reactnative-muted);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.reactnative-cta {
+  position: relative;
+  overflow: hidden;
+
+  padding: 100px 24px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(24, 167, 201, 0.2),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #071923,
+      #0b2a37
+    );
+
+  text-align: center;
+}
+
+.reactnative-cta-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.reactnative-cta-content > svg {
+  margin-bottom: 20px;
+
+  color: #62cde4;
+  font-size: 38px;
+}
+
+.reactnative-cta h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.2;
+}
+
+.reactnative-cta p {
+  max-width: 600px;
+  margin: 18px auto 30px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .reactnative-hero {
+    min-height: 600px;
+    padding: 90px 22px 125px;
+  }
+
+  .reactnative-feature-grid,
+  .reactnative-expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reactnative-benefits-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .reactnative-hero {
+    min-height: auto;
+    padding: 80px 18px 115px;
+  }
+
+  .reactnative-hero-icon {
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 22px;
+
+    border-radius: 18px;
+    font-size: 29px;
+  }
+
+  .reactnative-eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .reactnative-hero h1 {
+    font-size: 38px;
+  }
+
+  .reactnative-hero-description {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .reactnative-hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .reactnative-btn {
+    width: 100%;
+  }
+
+  .reactnative-intro {
+    width: calc(100% - 30px);
+
+    margin-top: -50px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .reactnative-stat {
+    padding: 23px 20px;
+
+    border-right: none;
+    border-bottom: 1px solid #e9eef0;
+  }
+
+  .reactnative-stat:last-child {
+    border-bottom: none;
+  }
+
+  .reactnative-section {
+    padding: 80px 18px;
+  }
+
+  .reactnative-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .reactnative-section-heading h2 {
+    font-size: 32px;
+  }
+
+  .reactnative-section-heading p {
+    font-size: 14px;
+  }
+
+  .reactnative-feature-grid,
+  .reactnative-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reactnative-feature-card,
+  .reactnative-expertise-card {
+    padding: 26px;
+  }
+
+  .reactnative-benefits {
+    padding: 80px 18px;
+  }
+
+  .reactnative-benefits-content h2 {
+    font-size: 32px;
+  }
+
+  .reactnative-benefits-content p {
+    font-size: 14px;
+  }
+
+  .reactnative-benefit-list {
+    grid-template-columns: 1fr;
+  }
+
+  .reactnative-cta {
+    padding: 80px 18px;
+  }
+
+  .reactnative-cta h2 {
+    font-size: 32px;
+  }
+
+  .reactnative-cta p {
+    font-size: 14px;
+  }
+}
