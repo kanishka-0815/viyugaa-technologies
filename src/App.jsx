@@ -39,7 +39,7 @@ const AngularJSDevelopers = React.lazy(
 );
 
 const IOSDevelopers = React.lazy(
-  () => import("./pages/work/IOSDevelopers")
+  () => import("./pages/work/iOSDevelopers")
 );
 
 const ReactNativeDevelopers = React.lazy(
